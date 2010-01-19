@@ -16,5 +16,6 @@
 + (NSArray *) getDeviceList;
 + (NSDictionary *) getDefaultOutputDevice;
 + (NSDictionary *) getDeviceByID: (AudioDeviceID)deviceID;
++ (NSDictionary *) getDeviceByUID: (NSString *)deviceUID;
 
 @end

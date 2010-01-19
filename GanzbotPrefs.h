@@ -14,5 +14,6 @@
 }
 
 + (NSUserDefaults *)loadPrefs;
++ (NSDictionary *)getAudioDevice;
 
 @end

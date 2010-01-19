@@ -329,17 +329,17 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F819D8E110637F1007386BF</string>
+										<string>3F819DE611064198007386BF</string>
 										<key>history</key>
 										<array>
-											<string>3F7FC4081105AC8800E3EA0B</string>
-											<string>3F7FC4731105B85400E3EA0B</string>
-											<string>3F7FC4861105BAEC00E3EA0B</string>
-											<string>3F7FC4D01105BE7300E3EA0B</string>
-											<string>3F7FC4D11105BE7300E3EA0B</string>
-											<string>3F7FC4D21105BE7300E3EA0B</string>
-											<string>3F7FC5031105C1F300E3EA0B</string>
-											<string>3F7FC50B110637DE00E3EA0B</string>
+											<string>3F819DC31106407F007386BF</string>
+											<string>3F819DC41106407F007386BF</string>
+											<string>3F819DC51106407F007386BF</string>
+											<string>3F819DC61106407F007386BF</string>
+											<string>3F819DC71106407F007386BF</string>
+											<string>3F819DC91106407F007386BF</string>
+											<string>3F819DD6110640DE007386BF</string>
+											<string>3F819DE511064198007386BF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -535,7 +535,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>3F819DE711064198007386BF</string>
+		<string>3F819DA211063BD6007386BF</string>
+		<string>3F819DA311063BD6007386BF</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>3F6E8474110531C600575ABE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot Controller.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -560,7 +565,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>Ganzbot.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -577,6 +582,8 @@
 							<string>221pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -658,8 +665,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 202}}</string>
-											<string>{{316, 0}, {378, 202}}</string>
+											<string>{{0, 0}, {316, 203}}</string>
+											<string>{{316, 0}, {378, 203}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -674,8 +681,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 202}}</string>
-											<string>{{0, 202}, {694, 179}}</string>
+											<string>{{0, 0}, {694, 203}}</string>
+											<string>{{0, 203}, {694, 178}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -708,7 +715,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 202}}</string>
+									<string>{{316, 0}, {378, 203}}</string>
 									<key>RubberWindowFrame</key>
 									<string>21 333 694 422 0 0 1280 778 </string>
 								</dict>
@@ -736,13 +743,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>3F7FC38B11059E2000E3EA0B</string>
+				<string>3F819D9A11063BD6007386BF</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>3F7FC38C11059E2000E3EA0B</string>
-				<string>3F7FC38D11059E2000E3EA0B</string>
-				<string>3F7FC38E11059E2000E3EA0B</string>
-				<string>3F7FC38F11059E2000E3EA0B</string>
-				<string>3F7FC39011059E2000E3EA0B</string>
+				<string>3F819D9B11063BD6007386BF</string>
+				<string>3F819D9C11063BD6007386BF</string>
+				<string>3F819D9D11063BD6007386BF</string>
+				<string>3F819D9E11063BD6007386BF</string>
+				<string>3F819D9F11063BD6007386BF</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -906,7 +913,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>3F7FC39111059E2000E3EA0B</string>
+				<string>3F819DA011063BD6007386BF</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

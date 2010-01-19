@@ -7,6 +7,7 @@
 //
 
 #import "GanzbotPrefs.h"
+#import "AudioDevices.h"
 
 
 @implementation GanzbotPrefs
@@ -21,6 +22,26 @@
 	[preferences registerDefaults:dict];		
 	
 	return preferences;	
+}
+
++ (NSDictionary *) getAudioDevice{
+
+	NSUserDefaults *prefs = [GanzbotPrefs loadPrefs];
+	NSString *uid = [prefs objectForKey:@"outputDevice"];
+	NSDictionary *device = NULL;
+	
+	NSLog(@"%@", uid);
+	if (uid) {
+		device = [AudioDevices getDeviceByUID:uid];
+	}
+	
+	// Device doesn't exist (unplugged?)
+	if(device == NULL){
+		NSLog(@"Saved device UID does not exist. Has it been disconnected? (using default output device)");
+		device = [AudioDevices getDefaultOutputDevice];
+	}
+	
+	return device;
 }
 
 @end

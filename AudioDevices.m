@@ -55,6 +55,29 @@ static OSStatus GetAudioDevices( Ptr * devices, UInt16 * devicesAvailable )
     return device;	
 }
 
+/*
+ * Loops through devices and returns the one with the specified UID
+ */
++ (NSDictionary *) getDeviceByUID: (NSString *)deviceUID
+{
+	NSArray *outputs = [AudioDevices getDeviceList];
+	NSInteger i, count = [outputs count];
+	for( i = 0; i < count; i++ ){
+		NSDictionary *details = (NSDictionary *)[outputs objectAtIndex:i];
+		NSString *uid = [details valueForKey:@"uid"];
+		
+		if([uid isEqualToString:deviceUID] ){
+			return details;
+		}
+	}
+	
+	return NULL;
+}
+
+/*
+ * Gets device info for it's ID.
+ * IMPORTANT: IDs are not persistant or the same between boots. Use UID for persistant identification.
+ */
 + (NSDictionary *) getDeviceByID: (AudioDeviceID)deviceID
 {
 	OSStatus	err = noErr;

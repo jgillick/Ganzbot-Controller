@@ -7,6 +7,7 @@
 //
 
 #import "Ganzbot.h"
+#import "GanzbotPrefs.h"
 #import "AudioDevices.h"
 
 
@@ -40,9 +41,10 @@
 - (void)speechSynthesizer:(NSSpeechSynthesizer *)sender didFinishSpeaking:(BOOL)success {
 	NSSound *sound = [[NSSound alloc] initWithContentsOfFile:speechFile byReference:YES];
 	
-	NSDictionary *device = [AudioDevices getDefaultOutputDevice];
+	NSDictionary *device = [GanzbotPrefs getAudioDevice];
 	[sound setPlaybackDeviceIdentifier: [device valueForKey:@"uid"] ];
 	[sound play];
+	NSLog(@"Use device %@", [device valueForKey:@"name"]);
 }
 
 

@@ -45,8 +45,8 @@
 	
 	// List available output devices
 	NSArray *outputs = [AudioDevices getDeviceList];
-	NSDictionary *defaultDevice = [AudioDevices getDefaultOutputDevice];
-	NSString *defaultUID = [defaultDevice objectForKey:@"uid"];
+	NSDictionary *selectedDevice = [GanzbotPrefs getAudioDevice];
+	NSString *selectedUID = [selectedDevice objectForKey:@"uid"];
 	count = [outputs count];
 	for( i = 0; i < count; i++ ){
 		NSDictionary *output = (NSDictionary *)[outputs objectAtIndex:i];
@@ -60,7 +60,7 @@
 			[item setRepresentedObject: output];
 			
 			// Selected
-			if([deviceUID isEqualToString:defaultUID] ){
+			if([deviceUID isEqualToString:selectedUID] ){
 				[outputDeviceList selectItem: item];
 			}
 		}
@@ -104,7 +104,8 @@
 	
 	// Output device
 	NSMenuItem *outputItem = [outputDeviceList selectedItem];
-	NSDictionary *outputAttr = [voiceItem representedObject];
+	NSDictionary *outputAttr = [outputItem representedObject];
+	NSLog(@"save: %@", [outputAttr valueForKey: @"name"]);
 	[prefs setObject: [outputAttr valueForKey: @"uid"] forKey: @"outputDevice"];
 }
 
