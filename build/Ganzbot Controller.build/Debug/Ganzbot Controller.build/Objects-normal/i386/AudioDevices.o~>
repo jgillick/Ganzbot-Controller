@@ -1,0 +1,30 @@
+In file included from /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:10:
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.h:17: error: expected ')' before 'AudioDeviceID'
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m: In function 'GetAudioDevices':
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:22: warning: implicit declaration of function 'AudioHardwareGetPropertyInfo'
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:22: error: 'kAudioHardwarePropertyDevices' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:22: error: (Each undeclared identifier is reported only once
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:22: error: for each function it appears in.)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:27: error: 'AudioDeviceID' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:38: warning: implicit declaration of function 'AudioHardwareGetProperty'
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m: In function '+[AudioDevices getDefaultOutputDevice]':
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:48: error: 'AudioDeviceID' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:48: error: expected ';' before 'deviceID'
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:51: error: 'deviceID' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:52: error: 'kAudioHardwarePropertyDefaultOutputDevice' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m: At top level:
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:58: error: expected ')' before 'AudioDeviceID'
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m: In function '+[AudioDevices getDeviceByID:]':
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:65: error: 'AudioBufferList' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:65: error: 'theBufferList' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:70: warning: passing argument 1 of 'numberWithInt:' makes integer from pointer without a cast
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:74: warning: implicit declaration of function 'AudioDeviceGetProperty'
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:74: error: 'kAudioDevicePropertyDeviceNameCFString' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:83: error: 'kAudioDevicePropertyDeviceUID' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:93: warning: implicit declaration of function 'AudioDeviceGetPropertyInfo'
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:93: error: 'kAudioDevicePropertyStreamConfiguration' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:96: error: expected expression before ')' token
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:120: error: expected expression before ')' token
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m: In function '+[AudioDevices getDeviceList]':
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:145: error: 'AudioDeviceID' undeclared (first use in this function)
+/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m:145: error: 'devices' undeclared (first use in this function)

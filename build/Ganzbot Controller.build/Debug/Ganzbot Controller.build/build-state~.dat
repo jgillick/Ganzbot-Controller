@@ -1,0 +1,302 @@
+TGanzbot Controller
+v7
+r0
+t285580159.141533
+cCheck dependencies
+cProcessInfoPlistFile "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Info.plist" Info.plist
+cCopyStringsFile "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCompileXIB "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/English.lproj/MainMenu.xib"
+cCopyPlistFile "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/Defaults.plist" Defaults.plist
+cProcessPCH "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch.gch" "Ganzbot Controller_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/main.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/Ganzbot.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotController.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/AudioDevices.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotPrefs.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/MacOS/Ganzbot Controller" normal i386
+cTouch "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app"
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004AB44D2500000000000000EE
+t1253330213
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004A0CC1100000000000015C3C
+t1242349840
+s89148
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudio.h
+c0000000048649BCC00000000000002D4
+t1214553036
+s724
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.h
+c000000004B5504D000000000000000FE
+t1263862992
+s254
+i<Cocoa/Cocoa.h>
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m
+c000000004B5504D40000000000001333
+t1263862996
+s4915
+i<CoreAudio/CoreAudio.h>
+i"AudioDevices.h"
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Defaults.plist
+c000000004B555A9F0000000000000128
+t1263884959
+s296
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/English.lproj/InfoPlist.strings
+c000000004B50C259000000000000005C
+t1263583833
+s92
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/English.lproj/MainMenu.xib
+c000000004B5563DD00000000000363EC
+t1263887325
+s222188
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot Controller_Prefix.pch
+c000000004B50C25900000000000000A7
+t1263583833
+s167
+i<Cocoa/Cocoa.h>
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.h
+c000000004B54FA4B0000000000000185
+t1263860299
+s389
+i<Cocoa/Cocoa.h>
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.m
+c000000004B54FCF10000000000000394
+t1263860977
+s916
+i"Ganzbot.h"
+i"AudioDevices.h"
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.h
+c000000004B555C3D000000000000024E
+t1263885373
+s590
+i<Cocoa/Cocoa.h>
+i"Ganzbot.h"
+i"GanzbotPrefs.h"
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.m
+c000000004B555D130000000000000A10
+t1263885587
+s2576
+i"GanzbotController.h"
+i"AudioDevices.h"
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.h
+c000000004B555CF40000000000000102
+t1263885556
+s258
+i<Cocoa/Cocoa.h>
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.m
+c000000004B555CF80000000000000248
+t1263885560
+s584
+i"GanzbotPrefs.h"
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app
+t1263887359
+s102
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Info.plist
+t1263604908
+s800
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/MacOS/Ganzbot Controller
+t1263887359
+s26008
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/PkgInfo
+t1263604908
+s8
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/Defaults.plist
+t1263884985
+s296
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1263596164
+s92
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/English.lproj/MainMenu.nib
+t1263887335
+s45306
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/AudioDevices.o
+t1263887357
+s16336
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/Ganzbot Controller.LinkFileList
+c000000004B555653000000000000031D
+t1263883859
+s797
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/Ganzbot.o
+t1263887356
+s10360
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotController.o
+t1263887356
+s23608
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotPrefs.o
+t1263887357
+s7336
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/main.o
+t1263887356
+s4916
+
+N/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/main.m
+c000000004B50C259000000000000010A
+t1263583833
+s266
+i<Cocoa/Cocoa.h>
+
+N/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch.gch
+t1263887355
+s54084016
+
+NInfo.plist
+c000000004B5111B20000000000000355
+t1263604146
+s853
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies285580127#285580129#0(0"0(0#1#0"32088581143789676#0"0#
+
+CCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/AudioDevices.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s285580156.719620
+e285580157.107963
+r1
+xCompileC
+xbuild/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/AudioDevices.o
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m285580156#285580157#0(0"0(0#0#78"/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m4300885448#2055"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-generated-files.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-own-target-headers.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-all-target-headers.hmap" -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-project-headers.hmap" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/include" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources/i386" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources" -include "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch" -c "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/AudioDevices.m" -o "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/AudioDevices.o"0#
+
+CCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/Ganzbot.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s285580155.768147
+e285580156.719511
+r1
+xCompileC
+xbuild/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/Ganzbot.o
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.m285580155#285580156#0(0"0(0#0#73"/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.m4300885448#2045"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-generated-files.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-own-target-headers.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-all-target-headers.hmap" -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-project-headers.hmap" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/include" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources/i386" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources" -include "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch" -c "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.m" -o "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/Ganzbot.o"0#
+
+CCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotController.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s285580156.660637
+e285580156.984537
+r1
+xCompileC
+xbuild/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotController.o
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.m285580156#285580156#0(0"0(0#0#83"/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.m4300885448#2065"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-generated-files.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-own-target-headers.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-all-target-headers.hmap" -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-project-headers.hmap" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/include" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources/i386" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources" -include "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch" -c "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotController.m" -o "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotController.o"0#
+
+CCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotPrefs.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s285580156.984655
+e285580157.240344
+r1
+xCompileC
+xbuild/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotPrefs.o
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.m285580156#285580157#0(0"0(0#0#78"/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.m4300885448#2055"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-generated-files.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-own-target-headers.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-all-target-headers.hmap" -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-project-headers.hmap" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/include" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources/i386" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources" -include "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch" -c "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotPrefs.m" -o "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/GanzbotPrefs.o"0#
+
+CCompileC "build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/main.o" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s285580155.765516
+e285580156.660528
+r1
+xCompileC
+xbuild/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/main.o
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/main.m285580155#285580156#0(0"0(0#0#70"/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/main.m4300885448#2039"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-generated-files.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-own-target-headers.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-all-target-headers.hmap" -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-project-headers.hmap" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/include" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources/i386" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources" -include "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch" -c "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/main.m" -o "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/English.lproj/MainMenu.xib"
+s285580129.658190
+e285580136.241295
+r1
+xCompileXIB
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib285580130#285580136#0(0"0(0#0#90"/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/English.lproj/MainMenu.xib8822095678432048128#419"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/English.lproj/MainMenu.nib" "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/English.lproj/MainMenu.xib"0#
+
+CCopyPlistFile "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/Defaults.plist" Defaults.plist
+r0
+
+CCopyStringsFile "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+r0
+
+CLd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/MacOS/Ganzbot Controller" normal i386
+s285580157.240461
+e285580159.071788
+r1
+xLd
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/MacOS/Ganzbot Controller
+xnormal
+xi386
+lSLF07#2@137"Link /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/MacOS/Ganzbot Controller285580157#285580159#0(0"0(0#0#0"4300885448#817"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller" -filelist "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Objects-normal/i386/Ganzbot Controller.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework CoreAudio -o "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/MacOS/Ganzbot Controller"0#
+
+CProcessInfoPlistFile "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app/Contents/Info.plist" Info.plist
+r0
+
+CProcessPCH "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch.gch" "Ganzbot Controller_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+s285580136.259559
+e285580155.765320
+r1
+xProcessPCH
+x/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch.gch
+xGanzbot Controller_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@40"Precompile Ganzbot Controller_Prefix.pch285580136#285580155#0(0"0(0#0#93"/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot Controller_Prefix.pch4300885448#1909"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-generated-files.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-own-target-headers.hmap" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-all-target-headers.hmap" -iquote "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/Ganzbot Controller-project-headers.hmap" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug" "-F/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/include" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources/i386" "-I/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Ganzbot Controller.build/Debug/Ganzbot Controller.build/DerivedSources" -c "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot Controller_Prefix.pch" -o "/var/folders/yg/ygO27esjGIKMpLOeX2I-iE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Ganzbot Controller_Prefix-ctxrxfeohivsdoeiteqsuthrfuar/Ganzbot Controller_Prefix.pch.gch"0#
+
+CTouch "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app"
+s285580159.071964
+e285580159.141462
+r1
+xTouch
+x/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app
+lSLF07#2@104"Touch /Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app285580159#285580159#0(0"0(0#0#0"4300885448#196"    cd "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller"    /usr/bin/touch -c "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/build/Debug/Ganzbot Controller.app"0#
+
