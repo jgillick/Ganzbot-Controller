@@ -11,12 +11,15 @@
 
 @interface GanzbotController : NSObject {
 	
-	IBOutlet NSTextField *messageField;
-	IBOutlet NSPopUpButton *voicesList;
-	IBOutlet NSPopUpButton *speechRate;
-	IBOutlet NSPopUpButton *outputDeviceList;
-	IBOutlet NSPopUpButton *serialDeviceList;
-	IBOutlet NSDrawer *drawerPanel;
+	IBOutlet NSTextField	*messageField;
+	IBOutlet NSPopUpButton	*voicesList;
+	IBOutlet NSPopUpButton	*speechRate;
+	IBOutlet NSPopUpButton	*outputDeviceList;
+	IBOutlet NSPopUpButton	*serialDeviceList;
+	IBOutlet NSDrawer		*drawerPanel;
+	IBOutlet NSTextField	*serverPortField;
+	IBOutlet NSRuleEditor	*queueList;
+	IBOutlet NSTableView	*history;
 	
 	Ganzbot *ganzbot;
 	NSUserDefaults *prefs;
@@ -24,5 +27,6 @@
 
 - (IBAction)sayMessage:(id)sender;
 - (IBAction)savePrefs: (id)sender;
+- (IBAction)toggleServer: (id)sender;
 
 @end

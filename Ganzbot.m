@@ -25,7 +25,7 @@
 	return self;
 }
 
-- (void) say: (NSString *)message {
+- (void)say: (NSString *)message {
 	
 	if([synth isSpeaking]){
 		NSLog(@"Currently speaking");

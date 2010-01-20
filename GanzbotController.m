@@ -8,6 +8,7 @@
 
 #import "GanzbotController.h"
 #import "AudioDevices.h"
+#import "GanzbotServer.h"
 
 @implementation GanzbotController
 
@@ -90,6 +91,13 @@
 	[ganzbot setVoice: voiceAttr];
 	[ganzbot setRate: rate];
 	[ganzbot say: message];
+}
+
+/*
+ * Start/Stop the Ganzbot webserver
+ */
+- (IBAction)toggleServer: (id)sender {
+	
 }
 
 /*
