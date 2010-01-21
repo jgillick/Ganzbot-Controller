@@ -6,13 +6,13 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 #import <Cocoa/Cocoa.h>
+#import	"GanzbotQueue.h"
 
 
 @interface Ganzbot : NSObject {
-	bool isTalking, isRobotReady;
-	
 	NSString *speechFile;
 	NSSpeechSynthesizer *synth;
+	GanzbotQueue *queue;
 }
 
 - (void) setRate: (float) speed;

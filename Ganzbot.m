@@ -17,9 +17,13 @@
 	self = [super init];
 	
 	if(self){
+		queue = [[GanzbotQueue alloc] init];
+		
+		// Synth and speech file
 		speechFile = @"/Users/jeremy/speech.aif";
 		synth = [[NSSpeechSynthesizer alloc] init];
 		[synth setDelegate:self];
+		
 	}
 	
 	return self;
@@ -32,10 +36,15 @@
 		return;
 	}
 	
+	// Add to queue
+	[queue add:message];
+	[queue getMessageQueue:NO];
+	
 	// Save to audio file
 	NSURL *url = [NSURL fileURLWithPath:speechFile];
 	[synth startSpeakingString:message toURL:url];
 }
+
 
 // Called when the speech synth has finished writing the speech file
 - (void)speechSynthesizer:(NSSpeechSynthesizer *)sender didFinishSpeaking:(BOOL)success {

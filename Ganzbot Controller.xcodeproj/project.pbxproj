@@ -14,6 +14,21 @@
 		3F58C44811058C0A00C7F053 /* GanzbotPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */; };
 		3F6E84631105305400575ABE /* AudioDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E84621105305400575ABE /* AudioDevices.m */; };
 		3FB91D201105341B00869C54 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB91D1F1105341B00869C54 /* CoreAudio.framework */; };
+		3FDA61ED1106EBE2003D4F8A /* SSCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61D61106EBE2003D4F8A /* SSCrypto.m */; };
+		3FDA61EE1106EBE2003D4F8A /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61D91106EBE2003D4F8A /* DDNumber.m */; };
+		3FDA61EF1106EBE2003D4F8A /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61DB1106EBE2003D4F8A /* DDRange.m */; };
+		3FDA61F01106EBE2003D4F8A /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61DD1106EBE2003D4F8A /* DDData.m */; };
+		3FDA61F11106EBE2003D4F8A /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61E01106EBE2003D4F8A /* AsyncSocket.m */; };
+		3FDA61F21106EBE2003D4F8A /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61E31106EBE2003D4F8A /* HTTPAuthenticationRequest.m */; };
+		3FDA61F31106EBE2003D4F8A /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61E51106EBE2003D4F8A /* HTTPServer.m */; };
+		3FDA61F41106EBE2003D4F8A /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61E71106EBE2003D4F8A /* HTTPConnection.m */; };
+		3FDA61F51106EBE2003D4F8A /* HTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61E91106EBE2003D4F8A /* HTTPResponse.m */; };
+		3FDA61F61106EBE2003D4F8A /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61EC1106EBE2003D4F8A /* HTTPAsyncFileResponse.m */; };
+		3FDA61F81106EC0F003D4F8A /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDA61F71106EC0F003D4F8A /* libcrypto.dylib */; };
+		3FDA62281106ED9E003D4F8A /* GanzbotServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA62271106ED9E003D4F8A /* GanzbotServer.m */; };
+		3FDA62361106EFFC003D4F8A /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 3FDA62341106EFFC003D4F8A /* Web */; };
+		3FDA63CF1106F82D003D4F8A /* Ganzbot_Controller_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA63CE1106F82D003D4F8A /* Ganzbot_Controller_DataModel.xcdatamodel */; };
+		3FDA64361107D7BB003D4F8A /* GanzbotQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -50,6 +65,33 @@
 		3F6E84611105305400575ABE /* AudioDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDevices.h; sourceTree = "<group>"; };
 		3F6E84621105305400575ABE /* AudioDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDevices.m; sourceTree = "<group>"; };
 		3FB91D1F1105341B00869C54 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3FDA61D51106EBE2003D4F8A /* SSCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCrypto.h; sourceTree = "<group>"; };
+		3FDA61D61106EBE2003D4F8A /* SSCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCrypto.m; sourceTree = "<group>"; };
+		3FDA61D81106EBE2003D4F8A /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		3FDA61D91106EBE2003D4F8A /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		3FDA61DA1106EBE2003D4F8A /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		3FDA61DB1106EBE2003D4F8A /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		3FDA61DC1106EBE2003D4F8A /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		3FDA61DD1106EBE2003D4F8A /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		3FDA61DF1106EBE2003D4F8A /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		3FDA61E01106EBE2003D4F8A /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		3FDA61E21106EBE2003D4F8A /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		3FDA61E31106EBE2003D4F8A /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		3FDA61E41106EBE2003D4F8A /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		3FDA61E51106EBE2003D4F8A /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		3FDA61E61106EBE2003D4F8A /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		3FDA61E71106EBE2003D4F8A /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		3FDA61E81106EBE2003D4F8A /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		3FDA61E91106EBE2003D4F8A /* HTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponse.m; sourceTree = "<group>"; };
+		3FDA61EB1106EBE2003D4F8A /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		3FDA61EC1106EBE2003D4F8A /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		3FDA61F71106EC0F003D4F8A /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		3FDA62261106ED9E003D4F8A /* GanzbotServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GanzbotServer.h; sourceTree = "<group>"; };
+		3FDA62271106ED9E003D4F8A /* GanzbotServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanzbotServer.m; sourceTree = "<group>"; };
+		3FDA62341106EFFC003D4F8A /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Web; sourceTree = "<group>"; };
+		3FDA63CE1106F82D003D4F8A /* Ganzbot_Controller_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Ganzbot_Controller_DataModel.xcdatamodel; sourceTree = "<group>"; };
+		3FDA64341107D7BB003D4F8A /* GanzbotQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GanzbotQueue.h; sourceTree = "<group>"; };
+		3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanzbotQueue.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Ganzbot Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ganzbot Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +103,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				3FB91D201105341B00869C54 /* CoreAudio.framework in Frameworks */,
+				3FDA61F81106EC0F003D4F8A /* libcrypto.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +113,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3FDA61D31106EBB9003D4F8A /* CocoaHTTPServer */,
 				1C120FBE1100FD5900AFEA11 /* Ganzbot.h */,
 				1C120FBF1100FD5900AFEA11 /* Ganzbot.m */,
 				1C120FDF11011FCC00AFEA11 /* GanzbotController.h */,
@@ -78,6 +122,10 @@
 				3F6E84621105305400575ABE /* AudioDevices.m */,
 				3F58C44611058C0A00C7F053 /* GanzbotPrefs.h */,
 				3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */,
+				3FDA62261106ED9E003D4F8A /* GanzbotServer.h */,
+				3FDA62271106ED9E003D4F8A /* GanzbotServer.m */,
+				3FDA64341107D7BB003D4F8A /* GanzbotQueue.h */,
+				3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -85,6 +133,8 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FB91D1F1105341B00869C54 /* CoreAudio.framework */,
+				3FDA61F71106EC0F003D4F8A /* libcrypto.dylib */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -111,6 +161,7 @@
 		29B97314FDCFA39411CA2CEA /* Ganzbot Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3FDA63D01106F837003D4F8A /* Models */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -132,6 +183,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3FDA62341106EFFC003D4F8A /* Web */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -143,11 +195,85 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3FB91D1F1105341B00869C54 /* CoreAudio.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FDA61D31106EBB9003D4F8A /* CocoaHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA61E11106EBE2003D4F8A /* HTTP */,
+				3FDA61DE1106EBE2003D4F8A /* TCP */,
+				3FDA61D71106EBE2003D4F8A /* Categories */,
+				3FDA61D41106EBE2003D4F8A /* SSCrypto */,
+			);
+			name = CocoaHTTPServer;
+			sourceTree = "<group>";
+		};
+		3FDA61D41106EBE2003D4F8A /* SSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA61D51106EBE2003D4F8A /* SSCrypto.h */,
+				3FDA61D61106EBE2003D4F8A /* SSCrypto.m */,
+			);
+			name = SSCrypto;
+			sourceTree = "<group>";
+		};
+		3FDA61D71106EBE2003D4F8A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA61D81106EBE2003D4F8A /* DDNumber.h */,
+				3FDA61D91106EBE2003D4F8A /* DDNumber.m */,
+				3FDA61DA1106EBE2003D4F8A /* DDRange.h */,
+				3FDA61DB1106EBE2003D4F8A /* DDRange.m */,
+				3FDA61DC1106EBE2003D4F8A /* DDData.h */,
+				3FDA61DD1106EBE2003D4F8A /* DDData.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		3FDA61DE1106EBE2003D4F8A /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA61DF1106EBE2003D4F8A /* AsyncSocket.h */,
+				3FDA61E01106EBE2003D4F8A /* AsyncSocket.m */,
+			);
+			name = TCP;
+			sourceTree = "<group>";
+		};
+		3FDA61E11106EBE2003D4F8A /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA61EA1106EBE2003D4F8A /* Advanced */,
+				3FDA61E21106EBE2003D4F8A /* HTTPAuthenticationRequest.h */,
+				3FDA61E31106EBE2003D4F8A /* HTTPAuthenticationRequest.m */,
+				3FDA61E41106EBE2003D4F8A /* HTTPServer.h */,
+				3FDA61E51106EBE2003D4F8A /* HTTPServer.m */,
+				3FDA61E61106EBE2003D4F8A /* HTTPConnection.h */,
+				3FDA61E71106EBE2003D4F8A /* HTTPConnection.m */,
+				3FDA61E81106EBE2003D4F8A /* HTTPResponse.h */,
+				3FDA61E91106EBE2003D4F8A /* HTTPResponse.m */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
+		3FDA61EA1106EBE2003D4F8A /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA61EB1106EBE2003D4F8A /* HTTPAsyncFileResponse.h */,
+				3FDA61EC1106EBE2003D4F8A /* HTTPAsyncFileResponse.m */,
+			);
+			name = Advanced;
+			sourceTree = "<group>";
+		};
+		3FDA63D01106F837003D4F8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA63CE1106F82D003D4F8A /* Ganzbot_Controller_DataModel.xcdatamodel */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +323,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				1C1211541101501900AFEA11 /* Defaults.plist in Resources */,
+				3FDA62361106EFFC003D4F8A /* Web in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +339,19 @@
 				1C120FE111011FCC00AFEA11 /* GanzbotController.m in Sources */,
 				3F6E84631105305400575ABE /* AudioDevices.m in Sources */,
 				3F58C44811058C0A00C7F053 /* GanzbotPrefs.m in Sources */,
+				3FDA61ED1106EBE2003D4F8A /* SSCrypto.m in Sources */,
+				3FDA61EE1106EBE2003D4F8A /* DDNumber.m in Sources */,
+				3FDA61EF1106EBE2003D4F8A /* DDRange.m in Sources */,
+				3FDA61F01106EBE2003D4F8A /* DDData.m in Sources */,
+				3FDA61F11106EBE2003D4F8A /* AsyncSocket.m in Sources */,
+				3FDA61F21106EBE2003D4F8A /* HTTPAuthenticationRequest.m in Sources */,
+				3FDA61F31106EBE2003D4F8A /* HTTPServer.m in Sources */,
+				3FDA61F41106EBE2003D4F8A /* HTTPConnection.m in Sources */,
+				3FDA61F51106EBE2003D4F8A /* HTTPResponse.m in Sources */,
+				3FDA61F61106EBE2003D4F8A /* HTTPAsyncFileResponse.m in Sources */,
+				3FDA62281106ED9E003D4F8A /* GanzbotServer.m in Sources */,
+				3FDA63CF1106F82D003D4F8A /* Ganzbot_Controller_DataModel.xcdatamodel in Sources */,
+				3FDA64361107D7BB003D4F8A /* GanzbotQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
