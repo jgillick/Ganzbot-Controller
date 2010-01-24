@@ -13,6 +13,7 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		3F58C44811058C0A00C7F053 /* GanzbotPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */; };
 		3F6E84631105305400575ABE /* AudioDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E84621105305400575ABE /* AudioDevices.m */; };
+		3F8B4FB3110BD65800E7588D /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B4FB2110BD65800E7588D /* RegexKitLite.m */; };
 		3FB91D201105341B00869C54 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB91D1F1105341B00869C54 /* CoreAudio.framework */; };
 		3FDA61ED1106EBE2003D4F8A /* SSCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61D61106EBE2003D4F8A /* SSCrypto.m */; };
 		3FDA61EE1106EBE2003D4F8A /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61D91106EBE2003D4F8A /* DDNumber.m */; };
@@ -64,6 +65,8 @@
 		3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanzbotPrefs.m; sourceTree = "<group>"; };
 		3F6E84611105305400575ABE /* AudioDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDevices.h; sourceTree = "<group>"; };
 		3F6E84621105305400575ABE /* AudioDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDevices.m; sourceTree = "<group>"; };
+		3F8B4FB1110BD65800E7588D /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		3F8B4FB2110BD65800E7588D /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		3FB91D1F1105341B00869C54 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		3FDA61D51106EBE2003D4F8A /* SSCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCrypto.h; sourceTree = "<group>"; };
 		3FDA61D61106EBE2003D4F8A /* SSCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCrypto.m; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3F8B4FAF110BD64C00E7588D /* Regex */,
 				3FDA61D31106EBB9003D4F8A /* CocoaHTTPServer */,
 				1C120FBE1100FD5900AFEA11 /* Ganzbot.h */,
 				1C120FBF1100FD5900AFEA11 /* Ganzbot.m */,
@@ -199,6 +203,15 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F8B4FAF110BD64C00E7588D /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B4FB1110BD65800E7588D /* RegexKitLite.h */,
+				3F8B4FB2110BD65800E7588D /* RegexKitLite.m */,
+			);
+			name = Regex;
 			sourceTree = "<group>";
 		};
 		3FDA61D31106EBB9003D4F8A /* CocoaHTTPServer */ = {
@@ -352,6 +365,7 @@
 				3FDA62281106ED9E003D4F8A /* GanzbotServer.m in Sources */,
 				3FDA63CF1106F82D003D4F8A /* Ganzbot_Controller_DataModel.xcdatamodel in Sources */,
 				3FDA64361107D7BB003D4F8A /* GanzbotQueue.m in Sources */,
+				3F8B4FB3110BD65800E7588D /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +408,7 @@
 				GCC_PREFIX_HEADER = "Ganzbot Controller_Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "Ganzbot Controller";
 			};
 			name = Debug;

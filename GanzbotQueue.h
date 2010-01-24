@@ -13,6 +13,7 @@
 	NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
 	NSManagedObjectContext *managedObjectContext;
+	
 }
 
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -20,6 +21,10 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 
 - (NSArray *) getMessageQueue: (BOOL)wasSpoken;
-- (void)add: (NSString *)message;
+- (NSArray *) getMessageQueue: (BOOL)wasSpoken limit:(NSUInteger)useLimit;
+- (void)add: (NSString *)message voice:(NSString *)useVoice rate:(NSNumber *)useRate;
+
+- (NSManagedObject *)getNextInQueue;
+- (void)markAsSpoken: (NSManagedObject *)message;
 
 @end

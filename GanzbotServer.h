@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "HTTPServer.h"
+#import "HTTPConnection.h"
 
-
-@interface GanzbotServer : NSObject {
+@interface GanzbotServer : HTTPConnection {
 	HTTPServer *httpServer;
+	NSInteger status;
 }
 
+@property (readonly) NSInteger status;
 @property (readonly) HTTPServer *httpServer;
+
+- (BOOL)start:(NSInteger)port error:(NSError **)useError;
+- (BOOL)stop;
 
 @end

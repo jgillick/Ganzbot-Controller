@@ -6,17 +6,23 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 #import <Cocoa/Cocoa.h>
-#import	"GanzbotQueue.h"
-
+#import "GanzbotQueue.h"
+#import "GanzbotPrefs.h"
 
 @interface Ganzbot : NSObject {
 	NSString *speechFile;
 	NSSpeechSynthesizer *synth;
+	NSManagedObject *currentMessage;
+	NSSound *sound;
+	
 	GanzbotQueue *queue;
+	NSUserDefaults *prefs;
 }
 
-- (void) setRate: (float) speed;
-- (void) setVoice: (NSDictionary*) voiceAttr;
-- (void) say: (NSString*)message;
+- (id) initWithQueue: (GanzbotQueue *)useQueue;
+- (void) say: (NSString *)message;
+- (void) say: (NSString *)message withVoice:(NSString *)voiceName withRate:(NSNumber *)rate;
+- (NSDictionary *) decodeMessage: (NSString *)encoded;
+- (void)speakNextInQueue;
 
 @end

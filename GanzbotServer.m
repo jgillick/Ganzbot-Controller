@@ -8,12 +8,13 @@
 
 #import "GanzbotServer.h"
 
-
 @implementation GanzbotServer
+@synthesize status;
 @synthesize httpServer;
 
 - (id)init{
 	if(self = [super init]){
+		status = 0;
 		httpServer = [[HTTPServer alloc] init];
 		
 		// Doc root
@@ -26,6 +27,28 @@
 	return self;
 }
 
+- (BOOL)start:(NSInteger)port error:(NSError **)useError {
+
+	// Stop
+	if(status == 1){
+		[httpServer stop];
+	}
+	
+	// Start
+	[httpServer setPort:port];
+	if( [httpServer start:useError] ) {
+		status = 1;
+		return YES;
+	}
+	return NO;
+}
+- (BOOL)stop{
+	if( [httpServer stop] ) {
+		status = 0;
+		return YES;
+	}
+	return NO;
+}
 
 
 @end

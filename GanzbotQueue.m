@@ -12,9 +12,8 @@
 @implementation GanzbotQueue
 
 - (id)init {
-	self = [super init];
 	
-	if(self){
+	if(self = [super init]){
 		[self managedObjectModel];
 		[self managedObjectContext];
 	}
@@ -22,39 +21,75 @@
 	return self;
 }
 
+
+
+/**
+ * Save data updates
+ */
+- (void)save {
+	NSError *error = nil;
+	[[self managedObjectContext] save:&error];
+}
+
+
 /**
  * Add a message to the queue
  */
-- (void)add:(NSString *)message{
+- (void)add:(NSString *)message voice:(NSString *)useVoice rate:(NSNumber *)useRate{
 	NSManagedObject *messageEntity = nil; 
-	
+
 	messageEntity = [NSEntityDescription insertNewObjectForEntityForName: @"Message" inManagedObjectContext: [self managedObjectContext]]; 
 	[messageEntity setValue: message forKey: @"text"];
-	[messageEntity setValue: [NSDate date] forKey: @"created_on"];
+	[messageEntity setValue: useVoice forKey: @"voice"];
+	[messageEntity setValue: useRate forKey: @"rate"];
+	[messageEntity setValue: [NSDate date] forKey: @"created_on"]; 
 	
-	if ([[self managedObjectContext] commitEditing]) {
-        NSError *error = nil;
-        [[self managedObjectContext] save:&error];
-	}
+	[self save];
 }
 
 /**
- * Get message queue.
+ * Get next item in the queue
+ */
+- (NSManagedObject *)getNextInQueue {
+	NSArray *queue = [self getMessageQueue:NO limit:1];
+	
+	if([queue count] > 0){
+		return (NSManagedObject *) [queue objectAtIndex:0];
+	}
+	return NULL;
+}
+
+/**
+ * Mark a message as spoken
+ */
+- (void)markAsSpoken: (NSManagedObject *)message {;
+	[message setValue:[NSNumber numberWithBool:YES] forKey:@"was_spoken"];
+	[self save];
+}
+
+/**
+ * Get entire message queue.
  */
 - (NSArray *) getMessageQueue: (BOOL)wasSpoken{
+	return [self getMessageQueue:wasSpoken limit:0];
+}
+
+/**
+ * Get only a certain number of messages in the queue
+ */
+- (NSArray *) getMessageQueue: (BOOL)wasSpoken limit:(NSUInteger)useLimit{
 		
 
 	NSDictionary		*entities = [[self managedObjectModel] entitiesByName]; 
 	NSEntityDescription	*entity = [entities valueForKey:@"Message"];
-	
-	NSPredicate *predicate; 
-	predicate = [NSPredicate predicateWithFormat:@"was_spoken == %i", wasSpoken]; 
-	
+	NSPredicate			*predicate; 
 	NSSortDescriptor	*sort = [[NSSortDescriptor alloc] initWithKey:@"created_on" ascending:YES];
-	NSArray				*sortDescriptors = [NSArray arrayWithObject: sort]; 
+	NSArray				*sortDescriptors = [NSArray arrayWithObject: sort];
+	NSFetchRequest		*fetch = [[NSFetchRequest alloc] init]; 
 	
-	NSFetchRequest *fetch = [[NSFetchRequest alloc] init]; 
+	predicate = [NSPredicate predicateWithFormat:@"was_spoken == %i", wasSpoken]; 
 	[fetch setEntity: entity]; 
+	[fetch setFetchLimit:useLimit];
 	[fetch setPredicate: predicate]; 
 	[fetch setSortDescriptors: sortDescriptors]; 
 	

@@ -7,7 +7,9 @@
 //
 #import <Cocoa/Cocoa.h>
 #import "Ganzbot.h"
+#import	"GanzbotQueue.h"
 #import "GanzbotPrefs.h"
+#import "GanzbotServer.h"
 
 @interface GanzbotController : NSObject {
 	
@@ -18,12 +20,20 @@
 	IBOutlet NSPopUpButton	*serialDeviceList;
 	IBOutlet NSDrawer		*drawerPanel;
 	IBOutlet NSTextField	*serverPortField;
-	IBOutlet NSRuleEditor	*queueList;
-	IBOutlet NSTableView	*history;
+	IBOutlet NSButton		*serverButton;
+	IBOutlet NSTableView	*historyTable;
+	
+	IBOutlet NSArrayController *queueArray;
+	IBOutlet NSArrayController *historyArray;
 	
 	Ganzbot *ganzbot;
+	GanzbotQueue *queue;
+	GanzbotServer *gserver;
 	NSUserDefaults *prefs;
+	
+	NSManagedObjectContext *managedObjectContext;
 }
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)sayMessage:(id)sender;
 - (IBAction)savePrefs: (id)sender;

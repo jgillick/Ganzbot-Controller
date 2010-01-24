@@ -9,18 +9,35 @@
 #import "GanzbotController.h"
 #import "AudioDevices.h"
 #import "GanzbotServer.h"
+#import "HTTPServer.h"
 
 @implementation GanzbotController
 
 - (id)init{
 	if(self = [super init]){
 		prefs = [GanzbotPrefs loadPrefs];
+		queue = [[GanzbotQueue alloc] init];
+		gserver = [[GanzbotServer alloc] init];
+		[self managedObjectContext];
 	}
 	return self;
 }
 
 - (void)awakeFromNib {
 	int i, count;
+	
+	ganzbot = [[Ganzbot alloc] initWithQueue: queue];
+	
+	// Set table data sorting
+	NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"created_on" ascending:NO];
+	NSArray *sorts = [NSArray arrayWithObject:sort];
+	[historyArray setSortDescriptors: sorts];
+	
+	sort = [[NSSortDescriptor alloc] initWithKey:@"created_on" ascending:YES];
+	sorts = [NSArray arrayWithObject:sort];
+	[queueArray setSortDescriptors:sorts];
+	
+	[sort release];	
 	
 	// Get selected voice
 	NSString *selectedVoice = [prefs stringForKey: @"voice"];
@@ -77,20 +94,23 @@
 }
 	
 
+/**
+ * Tell ganzbot to speak a message
+ */
 - (IBAction)sayMessage:(id)sender{
 
 	NSString *message = [messageField stringValue];
-	ganzbot = [[Ganzbot alloc]init];
 		
 	// Get voice prefs
-	float rate = [[speechRate selectedItem] tag];
+	NSNumber *rate = [NSNumber numberWithInt: [[speechRate selectedItem] tag] ];
 	NSMenuItem *voiceItem = [voicesList selectedItem];
 	NSDictionary *voiceAttr = [voiceItem representedObject];
 	
+	// Add to queue
+	[ganzbot say:message withVoice:[voiceAttr objectForKey:@"VoiceIdentifier"] withRate:rate];
 	
-	[ganzbot setVoice: voiceAttr];
-	[ganzbot setRate: rate];
-	[ganzbot say: message];
+	// Empty field
+	[messageField setStringValue:@""];
 }
 
 /*
@@ -98,6 +118,27 @@
  */
 - (IBAction)toggleServer: (id)sender {
 	
+	// Stop
+	if( [gserver status] == 1 ){
+		if([gserver stop]){
+			[serverButton setTitle:@"Start"];
+		}
+		else{
+			NSLog(@"Could not stop server. Hmmm. Weird");
+		}
+	}
+	
+	// Start
+	else{
+		NSError *error = nil;
+		NSInteger port = [[serverPortField stringValue] intValue];
+		if( [gserver start:port	 error:&error] ){
+			[serverButton setTitle:@"Stop"];
+		}
+		else{
+			NSLog(@"Could not start server. %@", error);
+		}
+	}
 }
 
 /*
@@ -113,7 +154,6 @@
 	// Output device
 	NSMenuItem *outputItem = [outputDeviceList selectedItem];
 	NSDictionary *outputAttr = [outputItem representedObject];
-	NSLog(@"save: %@", [outputAttr valueForKey: @"name"]);
 	[prefs setObject: [outputAttr valueForKey: @"uid"] forKey: @"outputDevice"];
 }
 
@@ -125,6 +165,14 @@
 }
 - (void)drawerDidOpen: (NSNotification *)notification {
 	[prefs setBool:TRUE forKey: @"isDrawerOpen"];	
+}
+
+/*
+ * Core data context to update the UI
+ */
+- (NSManagedObjectContext *) managedObjectContext {
+	managedObjectContext = [queue managedObjectContext];
+	return managedObjectContext;
 }
 
 @end

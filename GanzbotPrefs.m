@@ -30,7 +30,6 @@
 	NSString *uid = [prefs objectForKey:@"outputDevice"];
 	NSDictionary *device = NULL;
 	
-	NSLog(@"%@", uid);
 	if (uid) {
 		device = [AudioDevices getDeviceByUID:uid];
 	}
