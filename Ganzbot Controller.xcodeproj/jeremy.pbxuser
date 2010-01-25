@@ -17,9 +17,9 @@
 	};
 	1C120FBF1100FD5900AFEA11 /* Ganzbot.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 3107}}";
-			sepNavSelRange = "{4389, 0}";
-			sepNavVisRange = "{3819, 725}";
+			sepNavIntBoundsRect = "{{0, 0}, {1062, 3185}}";
+			sepNavSelRange = "{4334, 0}";
+			sepNavVisRange = "{4107, 434}";
 		};
 	};
 	1C120FDF11011FCC00AFEA11 /* GanzbotController.h */ = {
@@ -8560,9 +8560,9 @@
 	};
 	3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {985, 3237}}";
-			sepNavSelRange = "{1080, 5}";
-			sepNavVisRange = "{858, 627}";
+			sepNavIntBoundsRect = "{{0, 0}, {832, 3159}}";
+			sepNavSelRange = "{615, 0}";
+			sepNavVisRange = "{990, 480}";
 		};
 	};
 	3FDA646F1108429D003D4F8A /* PBXTextBookmark */ = {
