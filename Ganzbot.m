@@ -88,25 +88,11 @@
 		useRate = [rate floatValue];
 	}
 	
-	if(voice && ![voice isEqualToString:@""]){
-		// Get voice ID from name
-		voice = [voice lowercaseString];
-		NSArray *voices = [NSSpeechSynthesizer availableVoices];
-		for (NSInteger i = 0; i < [voices count]; i++) {
-			NSString *voiceId = [voices objectAtIndex:i];
-			NSDictionary *voiceAttr = [NSSpeechSynthesizer attributesForVoice: voiceId];
-			NSString *name = (NSString *)[voiceAttr valueForKey: @"VoiceName"];
-			name = [name lowercaseString];
-			
-			NSLog(@"%@ = %@", name, voice);
-			
-			if([name isEqualTo:voice]){
-				useVoice = name;
-				break;
-			}
-		}
+	NSDictionary *voiceAttr = [self getVoiceForName:voice];
+	if(voiceAttr){
+		useVoice = [voiceAttr objectForKey:@"VoiceIdentifier"];
 	}
-	if(!useVoice){
+	else{
 		useVoice = [prefs stringForKey: @"voice"];	
 	}
 	
@@ -143,8 +129,6 @@
 		voiceAttr = [NSSpeechSynthesizer attributesForVoice: voiceId];
 		NSString *voiceName = (NSString *)[voiceAttr valueForKey: @"VoiceName"];
 		voiceName = [voiceName lowercaseString];
-		
-		NSLog(@"%@ = %@", voiceName, name);
 		
 		if([name isEqualTo:voiceName]){
 			return voiceAttr;

@@ -17,9 +17,9 @@
 	};
 	1C120FBF1100FD5900AFEA11 /* Ganzbot.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1062, 3185}}";
-			sepNavSelRange = "{4334, 0}";
-			sepNavVisRange = "{4107, 434}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 2873}}";
+			sepNavSelRange = "{2275, 0}";
+			sepNavVisRange = "{4503, 758}";
 		};
 	};
 	1C120FDF11011FCC00AFEA11 /* GanzbotController.h */ = {
@@ -758,6 +758,23 @@
 			3F8B5482110D94B600E7588D /* PBXTextBookmark */ = 3F8B5482110D94B600E7588D /* PBXTextBookmark */;
 			3F8B5483110D94B600E7588D /* PBXTextBookmark */ = 3F8B5483110D94B600E7588D /* PBXTextBookmark */;
 			3F8B5486110D94DA00E7588D /* PBXTextBookmark */ = 3F8B5486110D94DA00E7588D /* PBXTextBookmark */;
+			3F8B548E110D96AE00E7588D /* XCBuildMessageTextBookmark */ = 3F8B548E110D96AE00E7588D /* XCBuildMessageTextBookmark */;
+			3F8B548F110D96AE00E7588D /* PBXTextBookmark */ = 3F8B548F110D96AE00E7588D /* PBXTextBookmark */;
+			3F8B5496110D96BB00E7588D /* PBXTextBookmark */ = 3F8B5496110D96BB00E7588D /* PBXTextBookmark */;
+			3F8B5497110D96BB00E7588D /* PBXTextBookmark */ = 3F8B5497110D96BB00E7588D /* PBXTextBookmark */;
+			3F8B54BA110D992700E7588D /* PBXTextBookmark */ = 3F8B54BA110D992700E7588D /* PBXTextBookmark */;
+			3F8B54BB110D992700E7588D /* PBXTextBookmark */ = 3F8B54BB110D992700E7588D /* PBXTextBookmark */;
+			3F8B54BC110D992700E7588D /* PBXTextBookmark */ = 3F8B54BC110D992700E7588D /* PBXTextBookmark */;
+			3F8B54BD110D992700E7588D /* PBXTextBookmark */ = 3F8B54BD110D992700E7588D /* PBXTextBookmark */;
+			3F8B54C1110D9A4200E7588D /* PBXTextBookmark */ = 3F8B54C1110D9A4200E7588D /* PBXTextBookmark */;
+			3F8B54C2110D9A4200E7588D /* PBXTextBookmark */ = 3F8B54C2110D9A4200E7588D /* PBXTextBookmark */;
+			3F8B54C3110D9A4200E7588D /* PBXTextBookmark */ = 3F8B54C3110D9A4200E7588D /* PBXTextBookmark */;
+			3F8B54C4110D9A4200E7588D /* PBXTextBookmark */ = 3F8B54C4110D9A4200E7588D /* PBXTextBookmark */;
+			3F8B54C5110D9A4200E7588D /* PBXTextBookmark */ = 3F8B54C5110D9A4200E7588D /* PBXTextBookmark */;
+			3F8B54C6110D9A4200E7588D /* PBXTextBookmark */ = 3F8B54C6110D9A4200E7588D /* PBXTextBookmark */;
+			3F8B54C7110D9A9800E7588D /* PBXTextBookmark */ = 3F8B54C7110D9A9800E7588D /* PBXTextBookmark */;
+			3F8B54C8110D9A9800E7588D /* PBXTextBookmark */ = 3F8B54C8110D9A9800E7588D /* PBXTextBookmark */;
+			3F8B54C9110D9A9800E7588D /* PBXTextBookmark */ = 3F8B54C9110D9A9800E7588D /* PBXTextBookmark */;
 			3FDA63D21106F84D003D4F8A = 3FDA63D21106F84D003D4F8A /* PlistBookmark */;
 			3FDA646F1108429D003D4F8A = 3FDA646F1108429D003D4F8A /* PBXTextBookmark */;
 			3FDA64D911084A4D003D4F8A = 3FDA64D911084A4D003D4F8A /* PBXTextBookmark */;
@@ -859,7 +876,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {812, 494}}";
 			sepNavSelRange = "{626, 0}";
-			sepNavVisRange = "{188, 774}";
+			sepNavVisRange = "{150, 812}";
 		};
 	};
 	3F819E391106857D007386BF /* GanzbotServer.m */ = {
@@ -870,9 +887,9 @@
 		path = "/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/GanzbotServer.m";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 3978}}";
-			sepNavSelRange = "{2133, 0}";
-			sepNavVisRange = "{293, 877}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 3861}}";
+			sepNavSelRange = "{2940, 5}";
+			sepNavVisRange = "{2561, 954}";
 		};
 	};
 	3F84AE77110BB27800404AA0 /* PBXTextBookmark */ = {
@@ -1040,7 +1057,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 52";
 		rLen = 5;
-		rLoc = 3975;
+		rLoc = 3490;
 		rType = 0;
 		vrLen = 465;
 		vrLoc = 488;
@@ -1260,7 +1277,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 52";
 		rLen = 5;
-		rLoc = 3975;
+		rLoc = 3490;
 		rType = 0;
 		vrLen = 502;
 		vrLoc = 43;
@@ -2198,7 +2215,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 65";
 		rLen = 0;
-		rLoc = 5243;
+		rLoc = 4758;
 		rType = 0;
 		vrLen = 891;
 		vrLoc = 801;
@@ -2258,7 +2275,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 51";
 		rLen = 0;
-		rLoc = 3970;
+		rLoc = 3485;
 		rType = 0;
 		vrLen = 471;
 		vrLoc = 218;
@@ -2268,7 +2285,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 67";
 		rLen = 0;
-		rLoc = 5243;
+		rLoc = 4758;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 810;
@@ -2278,7 +2295,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 98";
 		rLen = 0;
-		rLoc = 5837;
+		rLoc = 5352;
 		rType = 0;
 		vrLen = 464;
 		vrLoc = 168;
@@ -2288,7 +2305,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 50";
 		rLen = 0;
-		rLoc = 3913;
+		rLoc = 3428;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 694;
@@ -2318,7 +2335,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 50";
 		rLen = 0;
-		rLoc = 3913;
+		rLoc = 3428;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 694;
@@ -2328,7 +2345,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 57";
 		rLen = 0;
-		rLoc = 4083;
+		rLoc = 3598;
 		rType = 0;
 		vrLen = 847;
 		vrLoc = 694;
@@ -2338,7 +2355,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 66";
 		rLen = 0;
-		rLoc = 5217;
+		rLoc = 4732;
 		rType = 0;
 		vrLen = 821;
 		vrLoc = 894;
@@ -2348,7 +2365,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 100";
 		rLen = 0;
-		rLoc = 5819;
+		rLoc = 5334;
 		rType = 0;
 		vrLen = 505;
 		vrLoc = 1506;
@@ -2358,7 +2375,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 66";
 		rLen = 0;
-		rLoc = 5295;
+		rLoc = 4810;
 		rType = 0;
 		vrLen = 515;
 		vrLoc = 0;
@@ -2368,7 +2385,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 66";
 		rLen = 0;
-		rLoc = 5295;
+		rLoc = 4810;
 		rType = 0;
 		vrLen = 515;
 		vrLoc = 0;
@@ -2538,7 +2555,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 91";
 		rLen = 44;
-		rLoc = 5678;
+		rLoc = 5193;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 1620;
@@ -2668,7 +2685,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 58";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 831;
 		vrLoc = 737;
@@ -2678,7 +2695,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 78";
 		rLen = 0;
-		rLoc = 5054;
+		rLoc = 4569;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 1121;
@@ -2688,7 +2705,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 78";
 		rLen = 0;
-		rLoc = 5054;
+		rLoc = 4569;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 1121;
@@ -2711,7 +2728,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 78";
 		rLen = 0;
-		rLoc = 5054;
+		rLoc = 4569;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 1121;
@@ -2721,7 +2738,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 61";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 668;
 		vrLoc = 950;
@@ -2731,7 +2748,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 61";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 901;
 		vrLoc = 762;
@@ -2741,7 +2758,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 64";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 900;
 		vrLoc = 762;
@@ -2751,7 +2768,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 65";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 965;
 		vrLoc = 762;
@@ -2761,7 +2778,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 63";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 941;
 		vrLoc = 762;
@@ -2792,7 +2809,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 199;
+		rLoc = 183;
 		rType = 1;
 	};
 	3F8B4FC7110BD81C00E7588D /* PBXTextBookmark */ = {
@@ -2800,7 +2817,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 83";
 		rLen = 0;
-		rLoc = 5017;
+		rLoc = 4532;
 		rType = 0;
 		vrLen = 447;
 		vrLoc = 1376;
@@ -2810,7 +2827,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 83";
 		rLen = 0;
-		rLoc = 5017;
+		rLoc = 4532;
 		rType = 0;
 		vrLen = 447;
 		vrLoc = 1376;
@@ -2830,7 +2847,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 60";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 877;
 		vrLoc = 762;
@@ -2840,7 +2857,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 83";
 		rLen = 0;
-		rLoc = 5017;
+		rLoc = 4532;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 711;
@@ -2850,7 +2867,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 83";
 		rLen = 0;
-		rLoc = 5017;
+		rLoc = 4532;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 711;
@@ -2860,7 +2877,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 61";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 801;
 		vrLoc = 711;
@@ -2870,7 +2887,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 52";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 860;
 		vrLoc = 718;
@@ -2880,7 +2897,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 63";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 830;
 		vrLoc = 718;
@@ -2890,7 +2907,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 61";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 830;
 		vrLoc = 718;
@@ -2900,7 +2917,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 61";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 824;
 		vrLoc = 627;
@@ -2910,7 +2927,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 61";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 810;
 		vrLoc = 627;
@@ -2920,7 +2937,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 65";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 998;
 		vrLoc = 627;
@@ -2930,7 +2947,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 60";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 713;
@@ -2940,7 +2957,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 63";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 713;
@@ -2950,7 +2967,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 62";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 713;
@@ -2960,7 +2977,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 62";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 806;
 		vrLoc = 713;
@@ -2970,7 +2987,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 63";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 786;
 		vrLoc = 713;
@@ -2980,7 +2997,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 60";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 713;
@@ -2990,7 +3007,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 60";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 713;
@@ -3000,7 +3017,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 60";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 792;
 		vrLoc = 713;
@@ -3010,7 +3027,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 60";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 792;
 		vrLoc = 713;
@@ -3020,7 +3037,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 57";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 766;
@@ -3030,7 +3047,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 62";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 766;
@@ -3040,7 +3057,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 68";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 766;
@@ -3050,7 +3067,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 68";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 975;
 		vrLoc = 766;
@@ -3090,7 +3107,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 77";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1010;
@@ -3130,7 +3147,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 80";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 950;
 		vrLoc = 1014;
@@ -3140,7 +3157,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 95";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 1412;
@@ -3376,7 +3393,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 98";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 659;
 		vrLoc = 1715;
@@ -3386,7 +3403,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 99";
 		rLen = 0;
-		rLoc = 2980;
+		rLoc = 2536;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 1522;
@@ -3600,7 +3617,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 121";
 		rLen = 0;
-		rLoc = 4918;
+		rLoc = 4433;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 2540;
@@ -3610,7 +3627,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 100";
 		rLen = 0;
-		rLoc = 2839;
+		rLoc = 2395;
 		rType = 0;
 		vrLen = 1178;
 		vrLoc = 1094;
@@ -3720,7 +3737,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 104";
 		rLen = 0;
-		rLoc = 2959;
+		rLoc = 2515;
 		rType = 0;
 		vrLen = 821;
 		vrLoc = 1839;
@@ -3760,7 +3777,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 104";
 		rLen = 0;
-		rLoc = 2959;
+		rLoc = 2515;
 		rType = 0;
 		vrLen = 785;
 		vrLoc = 1875;
@@ -3950,7 +3967,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 101";
 		rLen = 0;
-		rLoc = 2840;
+		rLoc = 2396;
 		rType = 0;
 		vrLen = 261;
 		vrLoc = 2307;
@@ -4126,7 +4143,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 93";
 		rLen = 0;
-		rLoc = 2628;
+		rLoc = 2191;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 1871;
@@ -4146,7 +4163,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 137";
 		rLen = 0;
-		rLoc = 4767;
+		rLoc = 4282;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 2818;
@@ -4156,7 +4173,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 101";
 		rLen = 0;
-		rLoc = 2628;
+		rLoc = 2191;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1915;
@@ -4165,8 +4182,8 @@
 		isa = PBXTextBookmark;
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 102";
-		rLen = 5;
-		rLoc = 2651;
+		rLen = 0;
+		rLoc = 2191;
 		rType = 0;
 		vrLen = 929;
 		vrLoc = 1803;
@@ -4176,7 +4193,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 108";
 		rLen = 0;
-		rLoc = 2768;
+		rLoc = 2324;
 		rType = 0;
 		vrLen = 814;
 		vrLoc = 2048;
@@ -4186,7 +4203,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 105";
 		rLen = 0;
-		rLoc = 2719;
+		rLoc = 2275;
 		rType = 0;
 		vrLen = 797;
 		vrLoc = 2092;
@@ -4206,7 +4223,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 104";
 		rLen = 0;
-		rLoc = 2719;
+		rLoc = 2275;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 1509;
@@ -4216,7 +4233,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 104";
 		rLen = 0;
-		rLoc = 2719;
+		rLoc = 2275;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 1509;
@@ -4276,7 +4293,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 31";
 		rLen = 0;
-		rLoc = 1220;
+		rLoc = 1361;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 257;
@@ -4286,7 +4303,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 39";
 		rLen = 0;
-		rLoc = 1356;
+		rLoc = 1497;
 		rType = 0;
 		vrLen = 601;
 		vrLoc = 351;
@@ -4296,7 +4313,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 39";
 		rLen = 0;
-		rLoc = 1356;
+		rLoc = 1497;
 		rType = 0;
 		vrLen = 601;
 		vrLoc = 351;
@@ -4306,7 +4323,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 39";
 		rLen = 0;
-		rLoc = 1356;
+		rLoc = 1497;
 		rType = 0;
 		vrLen = 601;
 		vrLoc = 351;
@@ -4356,7 +4373,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 104";
 		rLen = 0;
-		rLoc = 2719;
+		rLoc = 2275;
 		rType = 0;
 		vrLen = 1097;
 		vrLoc = 1353;
@@ -4436,7 +4453,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 48";
 		rLen = 0;
-		rLoc = 1521;
+		rLoc = 1662;
 		rType = 0;
 		vrLen = 426;
 		vrLoc = 532;
@@ -4486,7 +4503,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 48";
 		rLen = 0;
-		rLoc = 1521;
+		rLoc = 1662;
 		rType = 0;
 		vrLen = 426;
 		vrLoc = 532;
@@ -4496,7 +4513,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 40";
 		rLen = 0;
-		rLoc = 1388;
+		rLoc = 1529;
 		rType = 0;
 		vrLen = 641;
 		vrLoc = 181;
@@ -4506,7 +4523,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 52";
 		rLen = 0;
-		rLoc = 7681;
+		rLoc = 7750;
 		rType = 0;
 		vrLen = 491;
 		vrLoc = 468;
@@ -4537,7 +4554,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 50;
+		rLoc = 52;
 		rType = 1;
 	};
 	3F8B5108110BF60500E7588D /* PBXTextBookmark */ = {
@@ -4545,7 +4562,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 31";
 		rLen = 0;
-		rLoc = 1206;
+		rLoc = 1347;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 532;
@@ -4565,7 +4582,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 26";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 696;
 		vrLoc = 180;
@@ -4595,7 +4612,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 26";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 759;
 		vrLoc = 23;
@@ -4605,7 +4622,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 26";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 602;
 		vrLoc = 379;
@@ -4685,7 +4702,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 32";
 		rLen = 0;
-		rLoc = 1206;
+		rLoc = 1347;
 		rType = 0;
 		vrLen = 432;
 		vrLoc = 227;
@@ -4725,7 +4742,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 56";
 		rLen = 0;
-		rLoc = 7681;
+		rLoc = 7750;
 		rType = 0;
 		vrLen = 524;
 		vrLoc = 525;
@@ -4735,7 +4752,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 65";
 		rLen = 0;
-		rLoc = 1572;
+		rLoc = 1713;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 1106;
@@ -4831,7 +4848,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 104";
 		rLen = 0;
-		rLoc = 2719;
+		rLoc = 2275;
 		rType = 0;
 		vrLen = 576;
 		vrLoc = 0;
@@ -4861,7 +4878,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 65";
 		rLen = 0;
-		rLoc = 1572;
+		rLoc = 1713;
 		rType = 0;
 		vrLen = 723;
 		vrLoc = 0;
@@ -5147,7 +5164,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 65";
 		rLen = 0;
-		rLoc = 1572;
+		rLoc = 1713;
 		rType = 0;
 		vrLen = 723;
 		vrLoc = 0;
@@ -5157,7 +5174,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 136";
 		rLen = 0;
-		rLoc = 7680;
+		rLoc = 7749;
 		rType = 0;
 		vrLen = 783;
 		vrLoc = 2176;
@@ -5167,7 +5184,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 107";
 		rLen = 0;
-		rLoc = 5130;
+		rLoc = 5199;
 		rType = 0;
 		vrLen = 696;
 		vrLoc = 1835;
@@ -5177,7 +5194,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 107";
 		rLen = 0;
-		rLoc = 5130;
+		rLoc = 5199;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 1832;
@@ -5187,7 +5204,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 166";
 		rLen = 0;
-		rLoc = 7680;
+		rLoc = 7749;
 		rType = 0;
 		vrLen = 657;
 		vrLoc = 2971;
@@ -5197,7 +5214,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 82";
 		rLen = 0;
-		rLoc = 1974;
+		rLoc = 2115;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 1242;
@@ -5207,7 +5224,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 72";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 682;
 		vrLoc = 1993;
@@ -5217,7 +5234,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 84";
 		rLen = 0;
-		rLoc = 2367;
+		rLoc = 2479;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 1801;
@@ -5227,7 +5244,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 84";
 		rLen = 0;
-		rLoc = 2367;
+		rLoc = 2479;
 		rType = 0;
 		vrLen = 887;
 		vrLoc = 1801;
@@ -5237,7 +5254,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 116";
 		rLen = 0;
-		rLoc = 4837;
+		rLoc = 4906;
 		rType = 0;
 		vrLen = 823;
 		vrLoc = 2065;
@@ -5247,7 +5264,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 124";
 		rLen = 0;
-		rLoc = 5087;
+		rLoc = 5156;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 2065;
@@ -5257,7 +5274,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 119";
 		rLen = 0;
-		rLoc = 4926;
+		rLoc = 4995;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 2065;
@@ -5267,7 +5284,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 124";
 		rLen = 0;
-		rLoc = 5087;
+		rLoc = 5156;
 		rType = 0;
 		vrLen = 781;
 		vrLoc = 2256;
@@ -5277,7 +5294,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 126";
 		rLen = 0;
-		rLoc = 5088;
+		rLoc = 5157;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 2256;
@@ -5287,7 +5304,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 84";
 		rLen = 0;
-		rLoc = 2367;
+		rLoc = 2479;
 		rType = 0;
 		vrLen = 958;
 		vrLoc = 1109;
@@ -5317,7 +5334,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 107";
 		rLen = 52;
-		rLoc = 4436;
+		rLoc = 4505;
 		rType = 0;
 		vrLen = 927;
 		vrLoc = 2079;
@@ -5327,7 +5344,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 129";
 		rLen = 0;
-		rLoc = 5130;
+		rLoc = 5199;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 2411;
@@ -5337,7 +5354,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 118";
 		rLen = 0;
-		rLoc = 4856;
+		rLoc = 4925;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 2411;
@@ -5347,7 +5364,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 83";
 		rLen = 0;
-		rLoc = 1998;
+		rLoc = 2139;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 1242;
@@ -5357,7 +5374,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 129";
 		rLen = 0;
-		rLoc = 5130;
+		rLoc = 5199;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 2358;
@@ -5367,7 +5384,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 83";
 		rLen = 0;
-		rLoc = 1998;
+		rLoc = 2139;
 		rType = 0;
 		vrLen = 919;
 		vrLoc = 1109;
@@ -5377,7 +5394,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 83";
 		rLen = 0;
-		rLoc = 2016;
+		rLoc = 2157;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 2218;
@@ -5387,7 +5404,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 129";
 		rLen = 0;
-		rLoc = 5130;
+		rLoc = 5199;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 2218;
@@ -5397,7 +5414,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 119";
 		rLen = 0;
-		rLoc = 4923;
+		rLoc = 4992;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 2218;
@@ -5417,7 +5434,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 124";
 		rLen = 0;
-		rLoc = 5087;
+		rLoc = 5156;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 2275;
@@ -5427,7 +5444,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 126";
 		rLen = 0;
-		rLoc = 5123;
+		rLoc = 5192;
 		rType = 0;
 		vrLen = 832;
 		vrLoc = 2276;
@@ -5437,7 +5454,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 126";
 		rLen = 0;
-		rLoc = 5090;
+		rLoc = 5159;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 2276;
@@ -5467,7 +5484,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 126";
 		rLen = 0;
-		rLoc = 5090;
+		rLoc = 5159;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 2276;
@@ -5477,7 +5494,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 108";
 		rLen = 0;
-		rLoc = 4554;
+		rLoc = 4623;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 2171;
@@ -5487,7 +5504,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 119";
 		rLen = 0;
-		rLoc = 4926;
+		rLoc = 4995;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 2171;
@@ -5497,7 +5514,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 111";
 		rLen = 0;
-		rLoc = 4680;
+		rLoc = 4749;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 2171;
@@ -5539,7 +5556,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 132";
 		rLen = 41;
-		rLoc = 5180;
+		rLoc = 5249;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 2811;
@@ -5549,7 +5566,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 132";
 		rLen = 0;
-		rLoc = 5221;
+		rLoc = 5290;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 2811;
@@ -5559,7 +5576,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 134";
 		rLen = 0;
-		rLoc = 5416;
+		rLoc = 5485;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 2762;
@@ -5569,7 +5586,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 116";
 		rLen = 0;
-		rLoc = 4856;
+		rLoc = 4925;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 1371;
@@ -5579,7 +5596,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 150";
 		rLen = 0;
-		rLoc = 7029;
+		rLoc = 7098;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 3430;
@@ -5589,7 +5606,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 136";
 		rLen = 0;
-		rLoc = 5324;
+		rLoc = 5393;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 2678;
@@ -5609,7 +5626,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 136";
 		rLen = 0;
-		rLoc = 5362;
+		rLoc = 5431;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 2678;
@@ -5619,7 +5636,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 137";
 		rLen = 0;
-		rLoc = 5370;
+		rLoc = 5439;
 		rType = 0;
 		vrLen = 854;
 		vrLoc = 2950;
@@ -5629,7 +5646,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 137";
 		rLen = 0;
-		rLoc = 5362;
+		rLoc = 5431;
 		rType = 0;
 		vrLen = 816;
 		vrLoc = 2991;
@@ -5639,7 +5656,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 137";
 		rLen = 0;
-		rLoc = 5362;
+		rLoc = 5431;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 2833;
@@ -5649,7 +5666,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 83";
 		rLen = 0;
-		rLoc = 2367;
+		rLoc = 2479;
 		rType = 0;
 		vrLen = 961;
 		vrLoc = 1106;
@@ -5689,7 +5706,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 104";
 		rLen = 0;
-		rLoc = 4103;
+		rLoc = 4172;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 1831;
@@ -5699,7 +5716,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 72";
 		rLen = 0;
-		rLoc = 1974;
+		rLoc = 2115;
 		rType = 0;
 		vrLen = 944;
 		vrLoc = 1094;
@@ -5709,7 +5726,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 104";
 		rLen = 0;
-		rLoc = 4347;
+		rLoc = 4416;
 		rType = 0;
 		vrLen = 764;
 		vrLoc = 1820;
@@ -5719,7 +5736,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 87";
 		rLen = 0;
-		rLoc = 2404;
+		rLoc = 2516;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 1106;
@@ -5729,7 +5746,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 67";
 		rLen = 21;
-		rLoc = 1628;
+		rLoc = 1769;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 1106;
@@ -5739,7 +5756,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 90";
 		rLen = 0;
-		rLoc = 2685;
+		rLoc = 2797;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 1106;
@@ -5749,7 +5766,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 91";
 		rLen = 0;
-		rLoc = 2754;
+		rLoc = 2866;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 1371;
@@ -5759,7 +5776,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 91";
 		rLen = 0;
-		rLoc = 2754;
+		rLoc = 2866;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 1371;
@@ -5796,7 +5813,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 99";
 		rLen = 51;
-		rLoc = 3403;
+		rLoc = 3515;
 		rType = 0;
 		vrLen = 616;
 		vrLoc = 1896;
@@ -5806,7 +5823,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 97";
 		rLen = 21;
-		rLoc = 2712;
+		rLoc = 2824;
 		rType = 0;
 		vrLen = 660;
 		vrLoc = 1700;
@@ -5826,7 +5843,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 32";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 226;
@@ -5836,7 +5853,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 97";
 		rLen = 20;
-		rLoc = 2590;
+		rLoc = 2702;
 		rType = 0;
 		vrLen = 1051;
 		vrLoc = 1996;
@@ -5846,7 +5863,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 97";
 		rLen = 0;
-		rLoc = 2543;
+		rLoc = 2655;
 		rType = 0;
 		vrLen = 1046;
 		vrLoc = 1872;
@@ -5856,7 +5873,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 32";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 873;
 		vrLoc = 23;
@@ -5886,7 +5903,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 109";
 		rLen = 0;
-		rLoc = 3455;
+		rLoc = 3567;
 		rType = 0;
 		vrLen = 941;
 		vrLoc = 2079;
@@ -5916,7 +5933,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 34";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 639;
@@ -5926,7 +5943,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 34";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 389;
 		vrLoc = 549;
@@ -5986,7 +6003,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 111";
 		rLen = 0;
-		rLoc = 3454;
+		rLoc = 3566;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 1786;
@@ -5996,7 +6013,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 101";
 		rLen = 0;
-		rLoc = 2638;
+		rLoc = 2750;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 1786;
@@ -6006,7 +6023,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 122";
 		rLen = 0;
-		rLoc = 3968;
+		rLoc = 4037;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 2177;
@@ -6016,7 +6033,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 195";
 		rLen = 0;
-		rLoc = 6476;
+		rLoc = 6545;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 311;
@@ -6056,7 +6073,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 228";
 		rLen = 14;
-		rLoc = 6855;
+		rLoc = 6924;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 5449;
@@ -6066,7 +6083,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 113";
 		rLen = 0;
-		rLoc = 3457;
+		rLoc = 3569;
 		rType = 0;
 		vrLen = 837;
 		vrLoc = 2486;
@@ -6128,7 +6145,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 122";
 		rLen = 27;
-		rLoc = 3906;
+		rLoc = 3975;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 2570;
@@ -6138,7 +6155,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 111";
 		rLen = 0;
-		rLoc = 3455;
+		rLoc = 3567;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 2565;
@@ -6158,7 +6175,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 111";
 		rLen = 0;
-		rLoc = 3455;
+		rLoc = 3567;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 2565;
@@ -6168,7 +6185,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 33";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 267;
@@ -6178,7 +6195,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 75";
 		rLen = 0;
-		rLoc = 1898;
+		rLoc = 2039;
 		rType = 0;
 		vrLen = 952;
 		vrLoc = 1959;
@@ -6208,7 +6225,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 49";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1457;
 		rType = 0;
 		vrLen = 554;
 		vrLoc = 811;
@@ -6218,7 +6235,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 49";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1457;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 348;
@@ -6228,7 +6245,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 35";
 		rLen = 0;
-		rLoc = 828;
+		rLoc = 969;
 		rType = 0;
 		vrLen = 498;
 		vrLoc = 1251;
@@ -6443,7 +6460,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 123";
 		rLen = 0;
-		rLoc = 3813;
+		rLoc = 3925;
 		rType = 0;
 		vrLen = 862;
 		vrLoc = 2499;
@@ -6533,7 +6550,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 119";
 		rLen = 9;
-		rLoc = 3522;
+		rLoc = 3634;
 		rType = 0;
 		vrLen = 810;
 		vrLoc = 2582;
@@ -6543,7 +6560,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 125";
 		rLen = 0;
-		rLoc = 3816;
+		rLoc = 3928;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 2582;
@@ -6623,7 +6640,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 125";
 		rLen = 0;
-		rLoc = 3816;
+		rLoc = 3928;
 		rType = 0;
 		vrLen = 731;
 		vrLoc = 2638;
@@ -6713,7 +6730,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 91";
 		rLen = 0;
-		rLoc = 2058;
+		rLoc = 2199;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 1603;
@@ -6898,7 +6915,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 91";
 		rLen = 0;
-		rLoc = 2058;
+		rLoc = 2199;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 1607;
@@ -6908,7 +6925,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 82";
 		rLen = 8;
-		rLoc = 1651;
+		rLoc = 1792;
 		rType = 0;
 		vrLen = 904;
 		vrLoc = 1603;
@@ -6918,7 +6935,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 92";
 		rLen = 0;
-		rLoc = 2102;
+		rLoc = 2243;
 		rType = 0;
 		vrLen = 973;
 		vrLoc = 1603;
@@ -6928,7 +6945,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 96";
 		rLen = 0;
-		rLoc = 2364;
+		rLoc = 2476;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 1563;
@@ -6988,7 +7005,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 99";
 		rLen = 0;
-		rLoc = 2367;
+		rLoc = 2479;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 1701;
@@ -6998,7 +7015,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 117";
 		rLen = 0;
-		rLoc = 2940;
+		rLoc = 3052;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 2624;
@@ -7068,7 +7085,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 123";
 		rLen = 0;
-		rLoc = 3339;
+		rLoc = 3451;
 		rType = 0;
 		vrLen = 1147;
 		vrLoc = 2026;
@@ -7078,7 +7095,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 117";
 		rLen = 0;
-		rLoc = 2940;
+		rLoc = 3052;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 2479;
@@ -7098,7 +7115,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 117";
 		rLen = 0;
-		rLoc = 2940;
+		rLoc = 3052;
 		rType = 0;
 		vrLen = 1166;
 		vrLoc = 2427;
@@ -7108,7 +7125,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 98";
 		rLen = 0;
-		rLoc = 2401;
+		rLoc = 2513;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 2180;
@@ -7118,7 +7135,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 30";
 		rLen = 0;
-		rLoc = 796;
+		rLoc = 937;
 		rType = 0;
 		vrLen = 436;
 		vrLoc = 673;
@@ -7167,7 +7184,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 98";
 		rLen = 0;
-		rLoc = 2401;
+		rLoc = 2513;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 1804;
@@ -7177,7 +7194,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 118";
 		rLen = 0;
-		rLoc = 3113;
+		rLoc = 3225;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 2185;
@@ -7207,7 +7224,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 122";
 		rLen = 0;
-		rLoc = 3337;
+		rLoc = 3449;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 2183;
@@ -7217,7 +7234,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 122";
 		rLen = 0;
-		rLoc = 3337;
+		rLoc = 3449;
 		rType = 0;
 		vrLen = 1029;
 		vrLoc = 2183;
@@ -7247,7 +7264,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 122";
 		rLen = 0;
-		rLoc = 3337;
+		rLoc = 3449;
 		rType = 0;
 		vrLen = 1098;
 		vrLoc = 2183;
@@ -7257,7 +7274,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 122";
 		rLen = 0;
-		rLoc = 3339;
+		rLoc = 3451;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 2270;
@@ -7267,7 +7284,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 122";
 		rLen = 0;
-		rLoc = 3329;
+		rLoc = 3441;
 		rType = 0;
 		vrLen = 1143;
 		vrLoc = 2270;
@@ -7277,7 +7294,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 118";
 		rLen = 0;
-		rLoc = 3129;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 2270;
@@ -7298,7 +7315,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 124;
+		rLoc = 125;
 		rType = 1;
 	};
 	3F8B53F5110D85A500E7588D /* PBXTextBookmark */ = {
@@ -7306,7 +7323,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 118";
 		rLen = 5;
-		rLoc = 3094;
+		rLoc = 3206;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 2391;
@@ -7316,7 +7333,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 118";
 		rLen = 0;
-		rLoc = 3129;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 2270;
@@ -7376,7 +7393,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 118";
 		rLen = 0;
-		rLoc = 3129;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 2391;
@@ -7386,7 +7403,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 116";
 		rLen = 0;
-		rLoc = 2858;
+		rLoc = 2970;
 		rType = 0;
 		vrLen = 903;
 		vrLoc = 2391;
@@ -7396,7 +7413,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 119";
 		rLen = 0;
-		rLoc = 3129;
+		rLoc = 3241;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 2391;
@@ -7786,7 +7803,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 41";
 		rLen = 0;
-		rLoc = 1101;
+		rLoc = 1242;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 527;
@@ -7796,7 +7813,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 131";
 		rLen = 40;
-		rLoc = 3471;
+		rLoc = 3583;
 		rType = 0;
 		vrLen = 894;
 		vrLoc = 2890;
@@ -7826,7 +7843,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 93";
 		rLen = 0;
-		rLoc = 2296;
+		rLoc = 2408;
 		rType = 0;
 		vrLen = 1007;
 		vrLoc = 1586;
@@ -7876,7 +7893,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 93";
 		rLen = 0;
-		rLoc = 2296;
+		rLoc = 2408;
 		rType = 0;
 		vrLen = 1007;
 		vrLoc = 1586;
@@ -7916,7 +7933,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 92";
 		rLen = 0;
-		rLoc = 2241;
+		rLoc = 2191;
 		rType = 0;
 		vrLen = 872;
 		vrLoc = 1674;
@@ -7936,7 +7953,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 94";
 		rLen = 0;
-		rLoc = 2283;
+		rLoc = 2395;
 		rType = 0;
 		vrLen = 406;
 		vrLoc = 2042;
@@ -7995,7 +8012,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 113";
 		rLen = 35;
-		rLoc = 2907;
+		rLoc = 2463;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 2065;
@@ -8045,7 +8062,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 94";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2304;
 		rType = 0;
 		vrLen = 932;
 		vrLoc = 1559;
@@ -8055,7 +8072,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 113";
 		rLen = 35;
-		rLoc = 2907;
+		rLoc = 2463;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 2101;
@@ -8064,8 +8081,8 @@
 		isa = PBXTextBookmark;
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 101";
-		rLen = 4;
-		rLoc = 2636;
+		rLen = 0;
+		rLoc = 2191;
 		rType = 0;
 		vrLen = 729;
 		vrLoc = 2396;
@@ -8075,7 +8092,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 114";
 		rLen = 0;
-		rLoc = 2959;
+		rLoc = 2515;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 1372;
@@ -8095,7 +8112,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 150";
 		rLen = 0;
-		rLoc = 4883;
+		rLoc = 4398;
 		rType = 0;
 		vrLen = 694;
 		vrLoc = 3340;
@@ -8105,7 +8122,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 94";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2304;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 1563;
@@ -8115,7 +8132,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 94";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2304;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 1563;
@@ -8136,7 +8153,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 196;
+		rLoc = 180;
 		rType = 1;
 	};
 	3F8B5465110D91BA00E7588D /* PBXTextBookmark */ = {
@@ -8144,7 +8161,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 154";
 		rLen = 0;
-		rLoc = 4920;
+		rLoc = 4435;
 		rType = 0;
 		vrLen = 346;
 		vrLoc = 3602;
@@ -8154,7 +8171,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 94";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2304;
 		rType = 0;
 		vrLen = 1021;
 		vrLoc = 1563;
@@ -8165,7 +8182,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 196;
+		rLoc = 180;
 		rType = 1;
 	};
 	3F8B5468110D91BE00E7588D /* PBXTextBookmark */ = {
@@ -8173,7 +8190,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 154";
 		rLen = 0;
-		rLoc = 4944;
+		rLoc = 4459;
 		rType = 0;
 		vrLen = 744;
 		vrLoc = 3343;
@@ -8183,7 +8200,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 154";
 		rLen = 0;
-		rLoc = 4887;
+		rLoc = 4402;
 		rType = 0;
 		vrLen = 728;
 		vrLoc = 3397;
@@ -8193,7 +8210,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 152";
 		rLen = 0;
-		rLoc = 4887;
+		rLoc = 4402;
 		rType = 0;
 		vrLen = 735;
 		vrLoc = 3397;
@@ -8203,7 +8220,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 152";
 		rLen = 0;
-		rLoc = 4887;
+		rLoc = 4402;
 		rType = 0;
 		vrLen = 543;
 		vrLoc = 4302;
@@ -8213,7 +8230,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 93";
 		rLen = 0;
-		rLoc = 2133;
+		rLoc = 2245;
 		rType = 0;
 		vrLen = 1010;
 		vrLoc = 1745;
@@ -8223,7 +8240,7 @@
 		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
 		name = "GanzbotServer.m: 93";
 		rLen = 0;
-		rLoc = 2133;
+		rLoc = 2245;
 		rType = 0;
 		vrLen = 877;
 		vrLoc = 293;
@@ -8233,7 +8250,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 152";
 		rLen = 0;
-		rLoc = 4887;
+		rLoc = 4402;
 		rType = 0;
 		vrLen = 542;
 		vrLoc = 4302;
@@ -8243,7 +8260,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 101";
 		rLen = 0;
-		rLoc = 2624;
+		rLoc = 2191;
 		rType = 0;
 		vrLen = 783;
 		vrLoc = 2012;
@@ -8263,7 +8280,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 124";
 		rLen = 52;
-		rLoc = 3032;
+		rLoc = 2588;
 		rType = 0;
 		vrLen = 505;
 		vrLoc = 2586;
@@ -8273,7 +8290,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 177";
 		rLen = 0;
-		rLoc = 4481;
+		rLoc = 3996;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 4108;
@@ -8293,7 +8310,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 124";
 		rLen = 12;
-		rLoc = 3035;
+		rLoc = 2591;
 		rType = 0;
 		vrLen = 832;
 		vrLoc = 2771;
@@ -8303,7 +8320,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 133";
 		rLen = 0;
-		rLoc = 3220;
+		rLoc = 2776;
 		rType = 0;
 		vrLen = 842;
 		vrLoc = 2986;
@@ -8313,10 +8330,179 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 173";
 		rLen = 0;
-		rLoc = 4389;
+		rLoc = 3904;
 		rType = 0;
 		vrLen = 725;
 		vrLoc = 3819;
+	};
+	3F8B548E110D96AE00E7588D /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ']' before 'voice'";
+		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 156;
+		rType = 1;
+	};
+	3F8B548F110D96AE00E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
+		name = "Ganzbot.m: 173";
+		rLen = 0;
+		rLoc = 3849;
+		rType = 0;
+		vrLen = 434;
+		vrLoc = 4107;
+	};
+	3F8B5496110D96BB00E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
+		name = "Ganzbot.m: 173";
+		rLen = 0;
+		rLoc = 3898;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 3819;
+	};
+	3F8B5497110D96BB00E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
+		name = "Ganzbot.m: 173";
+		rLen = 0;
+		rLoc = 3898;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 3841;
+	};
+	3F8B54BA110D992700E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
+		name = "Ganzbot.m: 173";
+		rLen = 0;
+		rLoc = 3898;
+		rType = 0;
+		vrLen = 786;
+		vrLoc = 3489;
+	};
+	3F8B54BB110D992700E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FDA61E51106EBE2003D4F8A /* HTTPServer.m */;
+		name = "HTTPServer.m: 148";
+		rLen = 7;
+		rLoc = 3776;
+		rType = 0;
+		vrLen = 540;
+		vrLoc = 3766;
+	};
+	3F8B54BC110D992700E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
+		name = "GanzbotServer.m: 25";
+		rLen = 0;
+		rLoc = 486;
+		rType = 0;
+		vrLen = 857;
+		vrLoc = 313;
+	};
+	3F8B54BD110D992700E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
+		name = "GanzbotServer.m: 25";
+		rLen = 0;
+		rLoc = 486;
+		rType = 0;
+		vrLen = 825;
+		vrLoc = 313;
+	};
+	3F8B54C1110D9A4200E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FDA61E41106EBE2003D4F8A /* HTTPServer.h */;
+		name = "HTTPServer.h: 28";
+		rLen = 0;
+		rLoc = 482;
+		rType = 0;
+		vrLen = 567;
+		vrLoc = 163;
+	};
+	3F8B54C2110D9A4200E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FDA61E51106EBE2003D4F8A /* HTTPServer.m */;
+		name = "HTTPServer.m: 148";
+		rLen = 7;
+		rLoc = 3776;
+		rType = 0;
+		vrLen = 575;
+		vrLoc = 3264;
+	};
+	3F8B54C3110D9A4200E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
+		name = "Ganzbot.m: 95";
+		rLen = 0;
+		rLoc = 2275;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 4503;
+	};
+	3F8B54C4110D9A4200E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E381106857D007386BF /* GanzbotServer.h */;
+		name = "GanzbotServer.h: 28";
+		rLen = 0;
+		rLoc = 626;
+		rType = 0;
+		vrLen = 809;
+		vrLoc = 153;
+	};
+	3F8B54C5110D9A4200E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
+		name = "GanzbotServer.m: 26";
+		rLen = 0;
+		rLoc = 523;
+		rType = 0;
+		vrLen = 875;
+		vrLoc = 293;
+	};
+	3F8B54C6110D9A4200E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
+		name = "GanzbotServer.m: 25";
+		rLen = 0;
+		rLoc = 582;
+		rType = 0;
+		vrLen = 1020;
+		vrLoc = 293;
+	};
+	3F8B54C7110D9A9800E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E381106857D007386BF /* GanzbotServer.h */;
+		name = "GanzbotServer.h: 28";
+		rLen = 0;
+		rLoc = 626;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 150;
+	};
+	3F8B54C8110D9A9800E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
+		name = "GanzbotServer.m: 25";
+		rLen = 0;
+		rLoc = 582;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 293;
+	};
+	3F8B54C9110D9A9800E7588D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F819E391106857D007386BF /* GanzbotServer.m */;
+		name = "GanzbotServer.m: 123";
+		rLen = 5;
+		rLoc = 2940;
+		rType = 0;
+		vrLen = 954;
+		vrLoc = 2561;
 	};
 	3FDA61E01106EBE2003D4F8A /* AsyncSocket.m */ = {
 		uiCtxt = {
@@ -8334,9 +8520,9 @@
 	};
 	3FDA61E51106EBE2003D4F8A /* HTTPServer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 4524}}";
-			sepNavSelRange = "{103, 0}";
-			sepNavVisRange = "{0, 774}";
+			sepNavIntBoundsRect = "{{0, 0}, {852, 4758}}";
+			sepNavSelRange = "{3776, 7}";
+			sepNavVisRange = "{3264, 575}";
 		};
 	};
 	3FDA61E61106EBE2003D4F8A /* HTTPConnection.h */ = {
@@ -8665,7 +8851,7 @@
 		fRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */;
 		name = "Ganzbot.m: 79";
 		rLen = 0;
-		rLoc = 5652;
+		rLoc = 5167;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 0;

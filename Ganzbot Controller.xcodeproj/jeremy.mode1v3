@@ -264,7 +264,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>3FDA63D01106F837003D4F8A</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>3FDA61D31106EBB9003D4F8A</string>
 								<string>3FDA61E11106EBE2003D4F8A</string>
@@ -277,13 +276,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>20</integer>
-									<integer>3</integer>
+									<integer>27</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 56}, {219, 585}}</string>
+							<string>{{0, 0}, {219, 585}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Ganzbot.m</string>
+								<string>GanzbotServer.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Ganzbot.m</string>
+										<string>GanzbotServer.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F8B5486110D94DA00E7588D</string>
+										<string>3F8B54C9110D9A9800E7588D</string>
 										<key>history</key>
 										<array>
 											<string>3F8B4F55110BCD3100E7588D</string>
@@ -350,16 +349,16 @@
 											<string>3F8B540F110D8B6D00E7588D</string>
 											<string>3F8B541C110D8C2700E7588D</string>
 											<string>3F8B541D110D8C2700E7588D</string>
-											<string>3F8B5427110D8D0300E7588D</string>
-											<string>3F8B5428110D8D0300E7588D</string>
 											<string>3F8B5436110D8E8500E7588D</string>
 											<string>3F8B544B110D902900E7588D</string>
 											<string>3F8B544C110D902900E7588D</string>
-											<string>3F8B5455110D90C800E7588D</string>
 											<string>3F8B545B110D918E00E7588D</string>
-											<string>3F8B5475110D92EB00E7588D</string>
 											<string>3F8B5481110D94B600E7588D</string>
-											<string>3F8B5482110D94B600E7588D</string>
+											<string>3F8B54C1110D9A4200E7588D</string>
+											<string>3F8B54C2110D9A4200E7588D</string>
+											<string>3F8B54C3110D9A4200E7588D</string>
+											<string>3F8B54C7110D9A9800E7588D</string>
+											<string>3F8B54C8110D9A9800E7588D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -555,11 +554,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>3F8B54CA110D9A9800E7588D</string>
 		<string>3F8B4E40110BB94700E7588D</string>
 		<string>3F8B4E41110BB94700E7588D</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>3F6E8474110531C600575ABE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot Controller.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -653,7 +653,7 @@
 			<key>WindowToolGUID</key>
 			<string>3F6E8474110531C600575ABE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

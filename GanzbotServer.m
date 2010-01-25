@@ -22,8 +22,10 @@ static Ganzbot *ganzbot;
 	status = 0;
 	httpServer = [[HTTPServer alloc] init];
 	
+	NSString *bonjourName = [NSString stringWithFormat:@"%@ (%@)", @"Ganzbot", [httpServer domain]];
+	[httpServer setName: bonjourName];
 	[httpServer setType:@"_http._tcp."];
-	
+							 
 	// Handle POST & GET actions
 	[httpServer setConnectionClass:[self class]];
 	
@@ -90,7 +92,6 @@ static Ganzbot *ganzbot;
 		
 		// Add the message to the queue
 		if([fileName isEqualToString:@"add.awesome"]){
-			NSLog(@"Data: %@", data);
 			float rate = [[data objectForKey:@"rate"] floatValue];
 
 			[ganzbot say:[data objectForKey:@"text"] 
@@ -144,8 +145,6 @@ static Ganzbot *ganzbot;
 	
 	[variables setObject:queueList forKey:@"queue"]; 
 	[variables setObject:historyList forKey:@"history"];
-	
-	NSLog(@"Queue: %i", [queueList count]);
 	
 	// Process
 	NSString *result = [tmplEngine processTemplateInFileAtPath:filePath withVariables:variables];
