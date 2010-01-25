@@ -19,9 +19,12 @@
 	NSUserDefaults *prefs;
 }
 
+@property (readonly) GanzbotQueue *queue;
+
 - (id) initWithQueue: (GanzbotQueue *)useQueue;
 - (void) say: (NSString *)message;
 - (void) say: (NSString *)message withVoice:(NSString *)voiceName withRate:(NSNumber *)rate;
+- (NSDictionary *)getVoiceForName: (NSString *)name;
 - (NSDictionary *) decodeMessage: (NSString *)encoded;
 - (void)speakNextInQueue;
 

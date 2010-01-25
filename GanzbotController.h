@@ -19,9 +19,11 @@
 	IBOutlet NSPopUpButton	*outputDeviceList;
 	IBOutlet NSPopUpButton	*serialDeviceList;
 	IBOutlet NSDrawer		*drawerPanel;
+	IBOutlet NSTableView	*historyTable;
+	
 	IBOutlet NSTextField	*serverPortField;
 	IBOutlet NSButton		*serverButton;
-	IBOutlet NSTableView	*historyTable;
+	IBOutlet NSButton		*serverCheckbox;
 	
 	IBOutlet NSArrayController *queueArray;
 	IBOutlet NSArrayController *historyArray;

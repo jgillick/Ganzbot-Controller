@@ -1997,7 +1997,7 @@
 						<object class="NSTextFieldCell" key="NSCell" id="456351964">
 							<int key="NSCellFlags">-1804468671</int>
 							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents">1024</string>
+							<string key="NSContents"/>
 							<reference key="NSSupport" ref="460945986"/>
 							<reference key="NSControlView" ref="518599212"/>
 							<bool key="NSDrawsBackground">YES</bool>
@@ -2162,6 +2162,7 @@
 				<object class="NSMutableArray" key="NSDeclaredKeys">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>text</string>
+					<string>serverStartAtLaunch</string>
 				</object>
 				<bool key="NSAutomaticallyPreparesContent">YES</bool>
 				<object class="_NSManagedProxy" key="_NSManagedProxy">
@@ -2203,6 +2204,16 @@
 				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">256</int>
 				<string key="NSFrameSize">{100, 100}</string>
+			</object>
+			<object class="NSUserDefaultsController" id="917687763">
+				<object class="NSMutableArray" key="NSDeclaredKeys">
+					<bool key="EncodedWithXMLCoder">YES</bool>
+					<object class="NSMutableString">
+						<characters key="NS.bytes">serverStartAtLaunch</characters>
+					</object>
+					<string>serverPortNumber</string>
+				</object>
+				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -3095,6 +3106,50 @@
 						<reference key="destination" ref="748941830"/>
 					</object>
 					<int key="connectionID">1002</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">serverCheckbox</string>
+						<reference key="source" ref="144029462"/>
+						<reference key="destination" ref="55348589"/>
+					</object>
+					<int key="connectionID">1003</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.serverStartAtLaunch</string>
+						<reference key="source" ref="55348589"/>
+						<reference key="destination" ref="917687763"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="55348589"/>
+							<reference key="NSDestination" ref="917687763"/>
+							<string key="NSLabel">value: values.serverStartAtLaunch</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.serverStartAtLaunch</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">1019</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values.serverPortNumber</string>
+						<reference key="source" ref="518599212"/>
+						<reference key="destination" ref="917687763"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="518599212"/>
+							<reference key="NSDestination" ref="917687763"/>
+							<string key="NSLabel">value: values.serverPortNumber</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values.serverPortNumber</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSContinuouslyUpdatesValue</string>
+								<boolean value="YES" key="NS.object.0"/>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">1024</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4585,6 +4640,11 @@
 						<reference key="object" ref="183254276"/>
 						<reference key="parent" ref="699120763"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1013</int>
+						<reference key="object" ref="917687763"/>
+						<reference key="parent" ref="0"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -5228,7 +5288,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1002</int>
+			<int key="maxID">1024</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5263,6 +5323,7 @@
 							<string>queueArray</string>
 							<string>serialDeviceList</string>
 							<string>serverButton</string>
+							<string>serverCheckbox</string>
 							<string>serverPortField</string>
 							<string>speechRate</string>
 							<string>voicesList</string>
@@ -5276,6 +5337,7 @@
 							<string>NSPopUpButton</string>
 							<string>NSArrayController</string>
 							<string>NSPopUpButton</string>
+							<string>NSButton</string>
 							<string>NSButton</string>
 							<string>NSTextField</string>
 							<string>NSPopUpButton</string>
@@ -5932,6 +5994,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">AppKit.framework/Headers/NSTextView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSUserDefaultsController</string>
+					<string key="superclassName">NSController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">AppKit.framework/Headers/NSUserDefaultsController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

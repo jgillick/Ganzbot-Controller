@@ -13,7 +13,13 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		3F58C44811058C0A00C7F053 /* GanzbotPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */; };
 		3F6E84631105305400575ABE /* AudioDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E84621105305400575ABE /* AudioDevices.m */; };
-		3F8B4FB3110BD65800E7588D /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B4FB2110BD65800E7588D /* RegexKitLite.m */; };
+		3F8B5292110D693400E7588D /* MGTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B5285110D693400E7588D /* MGTemplateEngine.m */; };
+		3F8B5293110D693400E7588D /* MGTemplateStandardMarkers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B5289110D693400E7588D /* MGTemplateStandardMarkers.m */; };
+		3F8B5294110D693400E7588D /* MGTemplateStandardFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B528B110D693400E7588D /* MGTemplateStandardFilters.m */; };
+		3F8B5295110D693400E7588D /* NSArray_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B528F110D693400E7588D /* NSArray_DeepMutableCopy.m */; };
+		3F8B5296110D693400E7588D /* NSDictionary_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B5291110D693400E7588D /* NSDictionary_DeepMutableCopy.m */; };
+		3F8B5335110D746800E7588D /* ICUTemplateMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B5332110D746800E7588D /* ICUTemplateMatcher.m */; };
+		3F8B5336110D746800E7588D /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B5334110D746800E7588D /* RegexKitLite.m */; };
 		3FB91D201105341B00869C54 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB91D1F1105341B00869C54 /* CoreAudio.framework */; };
 		3FDA61ED1106EBE2003D4F8A /* SSCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61D61106EBE2003D4F8A /* SSCrypto.m */; };
 		3FDA61EE1106EBE2003D4F8A /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA61D91106EBE2003D4F8A /* DDNumber.m */; };
@@ -65,8 +71,23 @@
 		3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanzbotPrefs.m; sourceTree = "<group>"; };
 		3F6E84611105305400575ABE /* AudioDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDevices.h; sourceTree = "<group>"; };
 		3F6E84621105305400575ABE /* AudioDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDevices.m; sourceTree = "<group>"; };
-		3F8B4FB1110BD65800E7588D /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
-		3F8B4FB2110BD65800E7588D /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		3F8B5284110D693400E7588D /* MGTemplateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateEngine.h; sourceTree = "<group>"; };
+		3F8B5285110D693400E7588D /* MGTemplateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateEngine.m; sourceTree = "<group>"; };
+		3F8B5286110D693400E7588D /* MGTemplateMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateMarker.h; sourceTree = "<group>"; };
+		3F8B5287110D693400E7588D /* MGTemplateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateFilter.h; sourceTree = "<group>"; };
+		3F8B5288110D693400E7588D /* MGTemplateStandardMarkers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateStandardMarkers.h; sourceTree = "<group>"; };
+		3F8B5289110D693400E7588D /* MGTemplateStandardMarkers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateStandardMarkers.m; sourceTree = "<group>"; };
+		3F8B528A110D693400E7588D /* MGTemplateStandardFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateStandardFilters.h; sourceTree = "<group>"; };
+		3F8B528B110D693400E7588D /* MGTemplateStandardFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateStandardFilters.m; sourceTree = "<group>"; };
+		3F8B528D110D693400E7588D /* DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepMutableCopy.h; sourceTree = "<group>"; };
+		3F8B528E110D693400E7588D /* NSArray_DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_DeepMutableCopy.h; sourceTree = "<group>"; };
+		3F8B528F110D693400E7588D /* NSArray_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_DeepMutableCopy.m; sourceTree = "<group>"; };
+		3F8B5290110D693400E7588D /* NSDictionary_DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_DeepMutableCopy.h; sourceTree = "<group>"; };
+		3F8B5291110D693400E7588D /* NSDictionary_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_DeepMutableCopy.m; sourceTree = "<group>"; };
+		3F8B5331110D746800E7588D /* ICUTemplateMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICUTemplateMatcher.h; sourceTree = "<group>"; };
+		3F8B5332110D746800E7588D /* ICUTemplateMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICUTemplateMatcher.m; sourceTree = "<group>"; };
+		3F8B5333110D746800E7588D /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		3F8B5334110D746800E7588D /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		3FB91D1F1105341B00869C54 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		3FDA61D51106EBE2003D4F8A /* SSCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCrypto.h; sourceTree = "<group>"; };
 		3FDA61D61106EBE2003D4F8A /* SSCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCrypto.m; sourceTree = "<group>"; };
@@ -116,7 +137,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3F8B4FAF110BD64C00E7588D /* Regex */,
+				3F8B5253110D681A00E7588D /* MGTemplateEngine */,
 				3FDA61D31106EBB9003D4F8A /* CocoaHTTPServer */,
 				1C120FBE1100FD5900AFEA11 /* Ganzbot.h */,
 				1C120FBF1100FD5900AFEA11 /* Ganzbot.m */,
@@ -205,13 +226,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3F8B4FAF110BD64C00E7588D /* Regex */ = {
+		3F8B5253110D681A00E7588D /* MGTemplateEngine */ = {
 			isa = PBXGroup;
 			children = (
-				3F8B4FB1110BD65800E7588D /* RegexKitLite.h */,
-				3F8B4FB2110BD65800E7588D /* RegexKitLite.m */,
+				3F8B52D0110D6F1D00E7588D /* Matchers */,
+				3F8B528C110D693400E7588D /* DeepMutableCopy */,
+				3F8B5284110D693400E7588D /* MGTemplateEngine.h */,
+				3F8B5285110D693400E7588D /* MGTemplateEngine.m */,
+				3F8B5286110D693400E7588D /* MGTemplateMarker.h */,
+				3F8B5287110D693400E7588D /* MGTemplateFilter.h */,
+				3F8B5288110D693400E7588D /* MGTemplateStandardMarkers.h */,
+				3F8B5289110D693400E7588D /* MGTemplateStandardMarkers.m */,
+				3F8B528A110D693400E7588D /* MGTemplateStandardFilters.h */,
+				3F8B528B110D693400E7588D /* MGTemplateStandardFilters.m */,
 			);
-			name = Regex;
+			name = MGTemplateEngine;
+			sourceTree = "<group>";
+		};
+		3F8B528C110D693400E7588D /* DeepMutableCopy */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B528D110D693400E7588D /* DeepMutableCopy.h */,
+				3F8B528E110D693400E7588D /* NSArray_DeepMutableCopy.h */,
+				3F8B528F110D693400E7588D /* NSArray_DeepMutableCopy.m */,
+				3F8B5290110D693400E7588D /* NSDictionary_DeepMutableCopy.h */,
+				3F8B5291110D693400E7588D /* NSDictionary_DeepMutableCopy.m */,
+			);
+			name = DeepMutableCopy;
+			sourceTree = "<group>";
+		};
+		3F8B52D0110D6F1D00E7588D /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B5330110D746800E7588D /* RegexKitLite */,
+			);
+			name = Matchers;
+			sourceTree = "<group>";
+		};
+		3F8B5330110D746800E7588D /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				3F8B5331110D746800E7588D /* ICUTemplateMatcher.h */,
+				3F8B5332110D746800E7588D /* ICUTemplateMatcher.m */,
+				3F8B5333110D746800E7588D /* RegexKitLite.h */,
+				3F8B5334110D746800E7588D /* RegexKitLite.m */,
+			);
+			name = RegexKitLite;
 			sourceTree = "<group>";
 		};
 		3FDA61D31106EBB9003D4F8A /* CocoaHTTPServer */ = {
@@ -365,7 +425,13 @@
 				3FDA62281106ED9E003D4F8A /* GanzbotServer.m in Sources */,
 				3FDA63CF1106F82D003D4F8A /* Ganzbot_Controller_DataModel.xcdatamodel in Sources */,
 				3FDA64361107D7BB003D4F8A /* GanzbotQueue.m in Sources */,
-				3F8B4FB3110BD65800E7588D /* RegexKitLite.m in Sources */,
+				3F8B5292110D693400E7588D /* MGTemplateEngine.m in Sources */,
+				3F8B5293110D693400E7588D /* MGTemplateStandardMarkers.m in Sources */,
+				3F8B5294110D693400E7588D /* MGTemplateStandardFilters.m in Sources */,
+				3F8B5295110D693400E7588D /* NSArray_DeepMutableCopy.m in Sources */,
+				3F8B5296110D693400E7588D /* NSDictionary_DeepMutableCopy.m in Sources */,
+				3F8B5335110D746800E7588D /* ICUTemplateMatcher.m in Sources */,
+				3F8B5336110D746800E7588D /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

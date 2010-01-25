@@ -37,7 +37,7 @@
  */
 - (void)add:(NSString *)message voice:(NSString *)useVoice rate:(NSNumber *)useRate{
 	NSManagedObject *messageEntity = nil; 
-
+	
 	messageEntity = [NSEntityDescription insertNewObjectForEntityForName: @"Message" inManagedObjectContext: [self managedObjectContext]]; 
 	[messageEntity setValue: message forKey: @"text"];
 	[messageEntity setValue: useVoice forKey: @"voice"];

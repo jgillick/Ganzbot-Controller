@@ -17,7 +17,6 @@
 	if(self = [super init]){
 		prefs = [GanzbotPrefs loadPrefs];
 		queue = [[GanzbotQueue alloc] init];
-		gserver = [[GanzbotServer alloc] init];
 		[self managedObjectContext];
 	}
 	return self;
@@ -27,6 +26,7 @@
 	int i, count;
 	
 	ganzbot = [[Ganzbot alloc] initWithQueue: queue];
+	gserver = [[GanzbotServer alloc] initWithGanzbot:ganzbot];
 	
 	// Set table data sorting
 	NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"created_on" ascending:NO];
@@ -91,6 +91,11 @@
 	else{
 		[drawerPanel close];
 	}
+	
+	// Start server
+	if( [prefs boolForKey:@"serverStartAtLaunch"] ){
+		[self toggleServer:nil];
+	}
 }
 	
 
@@ -131,7 +136,7 @@
 	// Start
 	else{
 		NSError *error = nil;
-		NSInteger port = [[serverPortField stringValue] intValue];
+		NSInteger port = [prefs integerForKey:@"serverPortNumber"];
 		if( [gserver start:port	 error:&error] ){
 			[serverButton setTitle:@"Stop"];
 		}

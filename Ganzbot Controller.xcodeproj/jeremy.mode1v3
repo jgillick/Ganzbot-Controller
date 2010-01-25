@@ -266,7 +266,10 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>3FDA63D01106F837003D4F8A</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>3FDA61D31106EBB9003D4F8A</string>
+								<string>3FDA61E11106EBE2003D4F8A</string>
+								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>3FDA62341106EFFC003D4F8A</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 								<string>1CC0EA4004350EF90041110B</string>
@@ -274,13 +277,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>20</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {219, 585}}</string>
+							<string>{{0, 56}, {219, 585}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -299,7 +302,7 @@
 							<real>219</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>4 134 1114 644 0 0 1280 778 </string>
+						<string>147 134 1114 644 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GanzbotServer.h</string>
+								<string>Ganzbot.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,28 +328,38 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GanzbotServer.h</string>
+										<string>Ganzbot.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F8B5124110BF72B00E7588D</string>
+										<string>3F8B5486110D94DA00E7588D</string>
 										<key>history</key>
 										<array>
 											<string>3F8B4F55110BCD3100E7588D</string>
 											<string>3F8B501F110BE5F000E7588D</string>
-											<string>3F8B5021110BE5F000E7588D</string>
-											<string>3F8B5025110BE5F000E7588D</string>
-											<string>3F8B5028110BE7F500E7588D</string>
 											<string>3F8B503E110BE99A00E7588D</string>
-											<string>3F8B5088110BEB9400E7588D</string>
-											<string>3F8B5097110BEBD800E7588D</string>
-											<string>3F8B50DF110BF31500E7588D</string>
-											<string>3F8B50E2110BF35C00E7588D</string>
-											<string>3F8B50F0110BF50A00E7588D</string>
-											<string>3F8B50FB110BF57F00E7588D</string>
-											<string>3F8B5119110BF6E300E7588D</string>
-											<string>3F8B5122110BF72B00E7588D</string>
-											<string>3F8B5123110BF72B00E7588D</string>
+											<string>3F8B5186110C009600E7588D</string>
+											<string>3F8B52F8110D71C900E7588D</string>
+											<string>3F8B537E110D79AC00E7588D</string>
+											<string>3F8B53B2110D7E3100E7588D</string>
+											<string>3F8B53C9110D814700E7588D</string>
+											<string>3F8B53D1110D829800E7588D</string>
+											<string>3F8B53D2110D829800E7588D</string>
+											<string>3F8B5409110D8B6D00E7588D</string>
+											<string>3F8B540A110D8B6D00E7588D</string>
+											<string>3F8B540F110D8B6D00E7588D</string>
+											<string>3F8B541C110D8C2700E7588D</string>
+											<string>3F8B541D110D8C2700E7588D</string>
+											<string>3F8B5427110D8D0300E7588D</string>
+											<string>3F8B5428110D8D0300E7588D</string>
+											<string>3F8B5436110D8E8500E7588D</string>
+											<string>3F8B544B110D902900E7588D</string>
+											<string>3F8B544C110D902900E7588D</string>
+											<string>3F8B5455110D90C800E7588D</string>
+											<string>3F8B545B110D918E00E7588D</string>
+											<string>3F8B5475110D92EB00E7588D</string>
+											<string>3F8B5481110D94B600E7588D</string>
+											<string>3F8B5482110D94B600E7588D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -360,7 +373,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {873, 457}}</string>
 								<key>RubberWindowFrame</key>
-								<string>4 134 1114 644 0 0 1280 778 </string>
+								<string>147 134 1114 644 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -380,7 +393,7 @@
 								<key>Frame</key>
 								<string>{{0, 462}, {873, 141}}</string>
 								<key>RubberWindowFrame</key>
-								<string>4 134 1114 644 0 0 1280 778 </string>
+								<string>147 134 1114 644 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -542,16 +555,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3F8B5125110BF72B00E7588D</string>
 		<string>3F8B4E40110BB94700E7588D</string>
 		<string>3F8B4E41110BB94700E7588D</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>3F6E8474110531C600575ABE</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>3F6E8474110531C600575ABE</string>
 		<string>/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot Controller.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>4 134 1114 644 0 0 1280 778 </string>
+	<string>147 134 1114 644 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -572,7 +584,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GanzbotServer.m</string>
+								<string>Ganzbot.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -581,7 +593,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1123, 221}}</string>
 								<key>RubberWindowFrame</key>
-								<string>9 185 1123 418 0 0 1280 778 </string>
+								<string>9 187 1123 418 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -607,7 +619,7 @@
 								<key>Frame</key>
 								<string>{{0, 226}, {1123, 151}}</string>
 								<key>RubberWindowFrame</key>
-								<string>9 185 1123 418 0 0 1280 778 </string>
+								<string>9 187 1123 418 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -637,11 +649,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.buildV3</string>
 			<key>WindowString</key>
-			<string>9 185 1123 418 0 0 1280 778 </string>
+			<string>9 187 1123 418 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>3F6E8474110531C600575ABE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

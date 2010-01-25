@@ -11,8 +11,10 @@
 #import "AudioDevices.h"
 #import "RegexKitLite.h"
 
+#define DEFAULT_RATE 130.0
 
 @implementation Ganzbot
+@synthesize queue;
 
 - (id)init {
 	self = [super init];
@@ -65,7 +67,6 @@
  * Extract and set the voice and rate markers from the message
  */
 - (NSDictionary *) decodeMessage: (NSString *)encoded{
-	NSLog(@"Decode %@", encoded);
 	NSMutableDictionary *details = [[NSMutableDictionary alloc] init];
 	
 	// Separate message from synth options
@@ -80,21 +81,25 @@
 	NSString *rate = [synthValues stringByMatching:@"r([0-9]*)" capture:1L];
 	
 	// Set values we can use
-	if(!rate){
-		useRate = 130.0;
+	if(!rate || rate == 0){
+		useRate = DEFAULT_RATE;
 	}
 	else{
 		useRate = [rate floatValue];
 	}
 	
-	if(voice){
+	if(voice && ![voice isEqualToString:@""]){
 		// Get voice ID from name
+		voice = [voice lowercaseString];
 		NSArray *voices = [NSSpeechSynthesizer availableVoices];
 		for (NSInteger i = 0; i < [voices count]; i++) {
 			NSString *voiceId = [voices objectAtIndex:i];
 			NSDictionary *voiceAttr = [NSSpeechSynthesizer attributesForVoice: voiceId];
 			NSString *name = (NSString *)[voiceAttr valueForKey: @"VoiceName"];
-
+			name = [name lowercaseString];
+			
+			NSLog(@"%@ = %@", name, voice);
+			
 			if([name isEqualTo:voice]){
 				useVoice = name;
 				break;
@@ -110,9 +115,43 @@
 	[details setObject:useVoice forKey:@"voice"];
 	[details setObject:[NSNumber numberWithFloat: useRate] forKey:@"rate"];
 	
-	NSLog(@"%@", details);
-	
 	return details;
+}
+
+/**
+ * Return the voice ID for the short name
+ */
+- (NSDictionary *)getVoiceForName: (NSString *)name {
+	NSDictionary *voiceAttr = nil;
+	
+	// Empty name
+	if([name isEqualToString:@""]){
+		return nil;
+	}
+	
+	// Is the name actually the ID
+	voiceAttr = [NSSpeechSynthesizer attributesForVoice: name];
+	if(voiceAttr){
+		return voiceAttr;
+	}
+	
+	// Loop through the voices
+	name = [name lowercaseString];
+	NSArray *voices = [NSSpeechSynthesizer availableVoices];
+	for (NSInteger i = 0; i < [voices count]; i++) {
+		NSString *voiceId = [voices objectAtIndex:i];
+		voiceAttr = [NSSpeechSynthesizer attributesForVoice: voiceId];
+		NSString *voiceName = (NSString *)[voiceAttr valueForKey: @"VoiceName"];
+		voiceName = [voiceName lowercaseString];
+		
+		NSLog(@"%@ = %@", voiceName, name);
+		
+		if([name isEqualTo:voiceName]){
+			return voiceAttr;
+		}
+	}
+	
+	return nil;
 }
 
 /**
@@ -130,6 +169,16 @@
 		NSURL *url = [NSURL fileURLWithPath:speechFile];
 		NSNumber *rate = [currentMessage valueForKey:@"rate"];
 		NSString *message = [currentMessage valueForKey:@"text"];
+		NSString *voice = [currentMessage valueForKey:@"voice"];
+		NSDictionary *voiceAttr = [self getVoiceForName:voice];
+		
+		// Voice ID
+		if(voiceAttr){
+			voice = [voiceAttr objectForKey:@"VoiceIdentifier"];
+		}
+		else{
+			voice = [prefs stringForKey: @"voice"];
+		}
 		
 		// Empty message?
 		message = [message stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -139,8 +188,13 @@
 			return;
 		}
 		
+		// Zero rate
+		if([rate floatValue] == 0.0){
+			rate = [NSNumber numberWithFloat:DEFAULT_RATE];
+		}
+		
 		// Synth speech properties
-		[synth setVoice:[currentMessage valueForKey:@"voice"]];
+		[synth setVoice: voice];
 		[synth setRate: [rate floatValue]];
 		
 		// Save synth to audio file
