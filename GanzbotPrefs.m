@@ -9,7 +9,6 @@
 #import "GanzbotPrefs.h"
 #import "AudioDevices.h"
 
-
 @implementation GanzbotPrefs
 
 + (NSUserDefaults *) loadPrefs{

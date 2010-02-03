@@ -10,10 +10,11 @@
 
 
 @interface GanzbotPrefs : NSObject {
-	
+
 }
 
 + (NSUserDefaults *)loadPrefs;
 + (NSDictionary *)getAudioDevice;
+
 
 @end

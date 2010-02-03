@@ -8,6 +8,12 @@
 #import <Cocoa/Cocoa.h>
 #import "GanzbotQueue.h"
 #import "GanzbotPrefs.h"
+#import "AMSerialPortList.h"
+#import "AMSerialPortAdditions.h"
+
+#define DEVICE_TYPE_NONE 0
+#define DEVICE_TYPE_SERIAL 1
+#define DEVICE_TYPE_REMOTE 2
 
 @interface Ganzbot : NSObject {
 	NSString *speechFile;
@@ -17,6 +23,10 @@
 	
 	GanzbotQueue *queue;
 	NSUserDefaults *prefs;
+	
+	NSString *ganzbotDevice;
+	UInt32 ganbotDeviceType;
+	AMSerialPort *serialPort;
 }
 
 @property (readonly) GanzbotQueue *queue;
@@ -27,5 +37,6 @@
 - (NSDictionary *)getVoiceForName: (NSString *)name;
 - (NSDictionary *) decodeMessage: (NSString *)encoded;
 - (void)speakNextInQueue;
+- (BOOL)setGanzbotDevice: (NSString *)device forType:(UInt32)type;
 
 @end

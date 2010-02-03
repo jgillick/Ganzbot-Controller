@@ -20,6 +20,7 @@
 	IBOutlet NSPopUpButton	*serialDeviceList;
 	IBOutlet NSDrawer		*drawerPanel;
 	IBOutlet NSTableView	*historyTable;
+	IBOutlet NSWindow		*window;
 	
 	IBOutlet NSTextField	*serverPortField;
 	IBOutlet NSButton		*serverButton;
@@ -40,5 +41,7 @@
 - (IBAction)sayMessage:(id)sender;
 - (IBAction)savePrefs: (id)sender;
 - (IBAction)toggleServer: (id)sender;
+
+- (void)updateSerialList;
 
 @end

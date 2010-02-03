@@ -23,10 +23,11 @@
 		prefs = [GanzbotPrefs loadPrefs];
 		
 		// Synth and speech file
-		speechFile = @"/Users/jeremy/speech.aif";
+		speechFile = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"speech.aif"];
 		synth = [[NSSpeechSynthesizer alloc] init];
 		[synth setDelegate:self];
 		
+		[AMSerialPortList sharedPortList];
 	}
 	
 	return self;
@@ -49,6 +50,8 @@
 	if([text isEqualTo:@""]){
 		return;
 	}
+	
+	NSLog(@"Queue message: '%@'", message);
 	
 	[self say:[msg objectForKey:@"text"]
 	withVoice:[msg objectForKey:@"voice"] 
@@ -156,6 +159,8 @@
 		NSString *voice = [currentMessage valueForKey:@"voice"];
 		NSDictionary *voiceAttr = [self getVoiceForName:voice];
 		
+		NSLog(@"Next in queue: '%@'", message);
+		
 		// Voice ID
 		if(voiceAttr){
 			voice = [voiceAttr objectForKey:@"VoiceIdentifier"];
@@ -184,6 +189,26 @@
 		// Save synth to audio file
 		[synth startSpeakingString:message toURL:url];
 	}
+	else{
+		NSLog(@"Empty queue");
+	}
+}
+
+/**
+ * Play the message audio file
+ */
+- (void)playMessage{
+	
+	// Tell Ganzbot we're starting
+	if(ganbotDeviceType == DEVICE_TYPE_SERIAL && serialPort){
+		[serialPort writeString:@"S\n" usingEncoding:NSUTF8StringEncoding error:nil];
+	}
+	
+	// Play
+	NSDictionary *device = [GanzbotPrefs getAudioDevice];
+	[sound setPlaybackDeviceIdentifier: [device valueForKey:@"uid"] ];
+	[sound setDelegate:self];
+	[sound play];
 }
 
 /**
@@ -192,24 +217,110 @@
 - (void)speechSynthesizer:(NSSpeechSynthesizer *)sender didFinishSpeaking:(BOOL)success {
 	sound = [[NSSound alloc] initWithContentsOfFile:speechFile byReference:YES];
 	
-	NSDictionary *device = [GanzbotPrefs getAudioDevice];
-	[sound setPlaybackDeviceIdentifier: [device valueForKey:@"uid"] ];
-	[sound setDelegate:self];
-	[sound play];
+	// Wait until the robot is ready to speak
+	if(ganbotDeviceType == DEVICE_TYPE_SERIAL && serialPort){
+		NSLog(@"Prepare...");
+		if(![serialPort writeString:@"\nR\n" usingEncoding:NSUTF8StringEncoding error:nil]){
+			NSLog(@"Serial Ganzbot Error");
+			[self playMessage];
+		}
+	}
+	else{
+		[self playMessage];
+	}
 }
 
 /**
  * Message done, play the next in queue
  */
 - (void)sound:(NSSound *)sound didFinishPlaying:(BOOL)finishedPlaying {
+	
+	// Tell Ganzbot we're done
+	if(ganbotDeviceType == DEVICE_TYPE_SERIAL && serialPort){
+		[serialPort writeString:@"E\n" usingEncoding:NSUTF8StringEncoding error:nil];
+	}
+	
 	if (currentMessage) {
 		[queue markAsSpoken:currentMessage];
 	}
 	[self speakNextInQueue];
 }
 
-- (void) setRate: (float) speed {
-	[synth setRate: speed];
+/**
+ * Set the ganzbot device
+ */
+- (BOOL)setGanzbotDevice: (NSString *)device forType:(UInt32)type{
+	ganzbotDevice = device;
+	ganbotDeviceType = type;
+	
+	// Stop speaking
+	[synth stopSpeaking];
+	if(sound){
+		[sound stop];
+	}
+	
+	// Open serial port
+	if(type == DEVICE_TYPE_SERIAL){
+		if (![device isEqualToString:[serialPort bsdPath]]) {
+			if(serialPort){
+				[serialPort close];
+				[serialPort release];
+			}
+			
+			// Create new port
+			serialPort = [[[AMSerialPort alloc] init:device withName:device type:(NSString*)CFSTR(kIOSerialBSDModemType)] autorelease];
+			[serialPort setDelegate:self];
+			
+			// open port - may take a few seconds ...
+			if ([serialPort open]) {
+				[serialPort writeString:@"\nR\n" usingEncoding:NSUTF8StringEncoding error:nil];
+				[serialPort readDataInBackground];
+			} else { // an error occured while creating port
+				NSLog(@"Couldn't open port for device %@", device);				
+				return NO;
+			}
+		}
+	}
+	// Close any open serial ports
+	else if(serialPort){
+		[serialPort close];
+		[serialPort release];
+		serialPort = nil;
+	}
+	
+	// Restart speaking
+	[self speakNextInQueue];
+	
+	return YES;
+}
+
+/**
+ * When data is received from the serial port
+ */
+- (void)serialPortReadData:(NSDictionary *)dataDictionary {
+	NSLog(@"%@", dataDictionary);
+	
+	NSData *data = [dataDictionary objectForKey:@"data"];
+	AMSerialPort *sendPort = [dataDictionary objectForKey:@"serialPort"];
+	NSLog(@"%i", [data length]);
+	
+	// Process returned cmd
+	if ([data length] > 0) {
+		NSString *cmd = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+		NSLog(@"CMD: %@", cmd);
+		
+		// Robot ready, play message
+		if( [cmd isEqualToString:@"R\n"] ){
+			[self playMessage];
+		}
+		else{
+			NSLog(@"%@", cmd);
+		}
+			
+		[cmd release];
+	}
+	
+	[sendPort readDataInBackground];
 }
 	   
 - (void)dealloc {

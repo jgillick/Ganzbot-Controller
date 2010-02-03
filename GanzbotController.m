@@ -10,6 +10,8 @@
 #import "AudioDevices.h"
 #import "GanzbotServer.h"
 #import "HTTPServer.h"
+#import "AMSerialPortList.h"
+#import "AMSerialPortAdditions.h"
 
 @implementation GanzbotController
 
@@ -63,8 +65,8 @@
 	
 	// List available output devices
 	NSArray *outputs = [AudioDevices getDeviceList];
-	NSDictionary *selectedDevice = [GanzbotPrefs getAudioDevice];
-	NSString *selectedUID = [selectedDevice objectForKey:@"uid"];
+	NSDictionary *selectedAudioDevice = [GanzbotPrefs getAudioDevice];
+	NSString *selectedUID = [selectedAudioDevice objectForKey:@"uid"];
 	count = [outputs count];
 	for( i = 0; i < count; i++ ){
 		NSDictionary *output = (NSDictionary *)[outputs objectAtIndex:i];
@@ -91,13 +93,77 @@
 	else{
 		[drawerPanel close];
 	}
-	
+}
+
+/**
+ * After the app has launched
+ */
+-(void)applicationDidFinishLaunching:(NSNotification*)aNotification {
+		
 	// Start server
 	if( [prefs boolForKey:@"serverStartAtLaunch"] ){
 		[self toggleServer:nil];
 	}
-}
 	
+	// Serial devices
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdatePorts:) name:AMSerialPortListDidAddPortsNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdatePorts:) name:AMSerialPortListDidRemovePortsNotification object:nil];
+	[self updateSerialList];
+
+	// Start going through the queue
+	[ganzbot speakNextInQueue];
+}
+
+/**
+ * Updates the serial port list
+ */
+- (void)updateSerialList{
+	
+	// Remove all items
+	[serialDeviceList removeAllItems];
+	[serialDeviceList addItemWithTitle:@"None"];
+	[[serialDeviceList lastItem] setTag:DEVICE_TYPE_NONE];
+	
+	[ganzbot setGanzbotDevice:nil forType:DEVICE_TYPE_NONE];
+	
+	// Add serial devices
+	NSString *selectedSerialDevice = [prefs stringForKey: @"serialDevice"];
+	NSEnumerator *portList = [AMSerialPortList portEnumerator];
+	AMSerialPort *port;
+	while (port = [portList nextObject]) {
+		[serialDeviceList addItemWithTitle:[port name]];
+		NSMenuItem *lastItem = [serialDeviceList lastItem];
+		[lastItem setRepresentedObject: port];
+		
+		[lastItem setTag:DEVICE_TYPE_SERIAL];
+		if( [selectedSerialDevice isEqualToString:[port name]] ){
+			
+			// Connect
+			if([ganzbot setGanzbotDevice:[port bsdPath] forType:DEVICE_TYPE_SERIAL]){
+				[serialDeviceList selectItem:lastItem];
+				[ganzbot speakNextInQueue];
+			}
+			// Error
+			else{
+				NSString *errMsg = [[NSString alloc] initWithFormat:@"Could not connect to Ganzbot device\n'%@'", [port name]];	
+				NSAlert *alert = [NSAlert alertWithMessageText:@"An error ocurred"
+												 defaultButton:@"OK" alternateButton:nil otherButton:nil
+									 informativeTextWithFormat:errMsg];	
+				[alert beginSheetModalForWindow:window modalDelegate:self didEndSelector:nil contextInfo:nil];
+				
+				[prefs setObject:@"None" forKey:@"serialDevice"];
+			}
+		}
+	}
+}
+
+/**
+ * When a serial port is connected or disconnected
+ */
+- (void)didUpdatePorts:(NSNotification *)theNotification {
+	[self updateSerialList];
+}
+
 
 /**
  * Tell ganzbot to speak a message
@@ -160,6 +226,11 @@
 	NSMenuItem *outputItem = [outputDeviceList selectedItem];
 	NSDictionary *outputAttr = [outputItem representedObject];
 	[prefs setObject: [outputAttr valueForKey: @"uid"] forKey: @"outputDevice"];
+	
+	// Update serial device list
+	if(sender == serialDeviceList){
+		[self updateSerialList];
+	}
 }
 
 /* 

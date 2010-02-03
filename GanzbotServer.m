@@ -23,6 +23,7 @@ static Ganzbot *ganzbot;
 	httpServer = [[HTTPServer alloc] init];
 	
 	NSString *bonjourName = [NSString stringWithFormat:@"%@ (%@)", @"Ganzbot", [httpServer domain]];
+	[httpServer setDomain:@"local"];
 	[httpServer setName: bonjourName];
 	[httpServer setType:@"_http._tcp."];
 							 
