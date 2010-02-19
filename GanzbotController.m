@@ -10,8 +10,7 @@
 #import "AudioDevices.h"
 #import "GanzbotServer.h"
 #import "HTTPServer.h"
-#import "AMSerialPortList.h"
-#import "AMSerialPortAdditions.h"
+#import "SerialDevice.h"
 
 @implementation GanzbotController
 
@@ -106,12 +105,7 @@
 	}
 	
 	// Serial devices
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdatePorts:) name:AMSerialPortListDidAddPortsNotification object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdatePorts:) name:AMSerialPortListDidRemovePortsNotification object:nil];
 	[self updateSerialList];
-
-	// Start going through the queue
-	[ganzbot speakNextInQueue];
 }
 
 /**
@@ -126,26 +120,30 @@
 	
 	[ganzbot setGanzbotDevice:nil forType:DEVICE_TYPE_NONE];
 	
+	
 	// Add serial devices
+	NSArray *devices = [SerialDevice allSerialDevices];
 	NSString *selectedSerialDevice = [prefs stringForKey: @"serialDevice"];
-	NSEnumerator *portList = [AMSerialPortList portEnumerator];
-	AMSerialPort *port;
-	while (port = [portList nextObject]) {
-		[serialDeviceList addItemWithTitle:[port name]];
-		NSMenuItem *lastItem = [serialDeviceList lastItem];
-		[lastItem setRepresentedObject: port];
+	for(int i = 0; i < [devices count]; i++){
+		SerialDevice *device = [devices objectAtIndex:i];
 		
-		[lastItem setTag:DEVICE_TYPE_SERIAL];
-		if( [selectedSerialDevice isEqualToString:[port name]] ){
-			
+		[serialDeviceList addItemWithTitle:[device name]];	
+		NSMenuItem *item = [serialDeviceList lastItem];
+		[item setRepresentedObject: device];
+		
+		// This is the selected device, connect to it
+		if( [selectedSerialDevice isEqualToString:[device name]] ){
+			[serialDeviceList selectItem:[serialDeviceList lastItem]];
+
 			// Connect
-			if([ganzbot setGanzbotDevice:[port bsdPath] forType:DEVICE_TYPE_SERIAL]){
-				[serialDeviceList selectItem:lastItem];
-				[ganzbot speakNextInQueue];
+			NSString *error = [ganzbot setGanzbotDevice:[device path] forType:DEVICE_TYPE_SERIAL];
+			if(error == nil){
+				[serialDeviceList selectItem:item];
+				//[ganzbot speakNextInQueue];
 			}
 			// Error
 			else{
-				NSString *errMsg = [[NSString alloc] initWithFormat:@"Could not connect to Ganzbot device\n'%@'", [port name]];	
+				NSString *errMsg = [[NSString alloc] initWithFormat:@"Could not connect to Ganzbot device:\n%@\n\n%@", [device name], error];
 				NSAlert *alert = [NSAlert alertWithMessageText:@"An error ocurred"
 												 defaultButton:@"OK" alternateButton:nil otherButton:nil
 									 informativeTextWithFormat:errMsg];	

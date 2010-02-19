@@ -14,7 +14,10 @@
 #define DEFAULT_RATE 130.0
 
 @implementation Ganzbot
+
 @synthesize queue;
+@synthesize ganzbotOn;
+@synthesize delegate;
 
 - (id)init {
 	self = [super init];
@@ -27,7 +30,7 @@
 		synth = [[NSSpeechSynthesizer alloc] init];
 		[synth setDelegate:self];
 		
-		[AMSerialPortList sharedPortList];
+		ganzbotOn = NO;
 	}
 	
 	return self;
@@ -199,9 +202,9 @@
  */
 - (void)playMessage{
 	
-	// Tell Ganzbot we're starting
+	// Tell Ganzbot we're starting to speak
 	if(ganbotDeviceType == DEVICE_TYPE_SERIAL && serialPort){
-		[serialPort writeString:@"S\n" usingEncoding:NSUTF8StringEncoding error:nil];
+		[serialPort writeString:@"S\n"];
 	}
 	
 	// Play
@@ -219,11 +222,7 @@
 	
 	// Wait until the robot is ready to speak
 	if(ganbotDeviceType == DEVICE_TYPE_SERIAL && serialPort){
-		NSLog(@"Prepare...");
-		if(![serialPort writeString:@"\nR\n" usingEncoding:NSUTF8StringEncoding error:nil]){
-			NSLog(@"Serial Ganzbot Error");
-			[self playMessage];
-		}
+		[serialPort writeString:@"\nR\n"];
 	}
 	else{
 		[self playMessage];
@@ -237,7 +236,7 @@
 	
 	// Tell Ganzbot we're done
 	if(ganbotDeviceType == DEVICE_TYPE_SERIAL && serialPort){
-		[serialPort writeString:@"E\n" usingEncoding:NSUTF8StringEncoding error:nil];
+		[serialPort writeString:@"E\n"];
 	}
 	
 	if (currentMessage) {
@@ -249,7 +248,8 @@
 /**
  * Set the ganzbot device
  */
-- (BOOL)setGanzbotDevice: (NSString *)device forType:(UInt32)type{
+- (NSString *)setGanzbotDevice: (NSString *)device forType:(UInt32)type{
+	NSString *error = nil;
 	ganzbotDevice = device;
 	ganbotDeviceType = type;
 	
@@ -261,24 +261,16 @@
 	
 	// Open serial port
 	if(type == DEVICE_TYPE_SERIAL){
-		if (![device isEqualToString:[serialPort bsdPath]]) {
+		if (![device isEqualToString:[serialPort path]]) {
 			if(serialPort){
 				[serialPort close];
 				[serialPort release];
 			}
 			
 			// Create new port
-			serialPort = [[[AMSerialPort alloc] init:device withName:device type:(NSString*)CFSTR(kIOSerialBSDModemType)] autorelease];
+			serialPort = [[[SerialDevice alloc] init:device withDataBoundary:'\n'] autorelease];
 			[serialPort setDelegate:self];
-			
-			// open port - may take a few seconds ...
-			if ([serialPort open]) {
-				[serialPort writeString:@"\nR\n" usingEncoding:NSUTF8StringEncoding error:nil];
-				[serialPort readDataInBackground];
-			} else { // an error occured while creating port
-				NSLog(@"Couldn't open port for device %@", device);				
-				return NO;
-			}
+			error = [serialPort open: 9600];
 		}
 	}
 	// Close any open serial ports
@@ -291,36 +283,32 @@
 	// Restart speaking
 	[self speakNextInQueue];
 	
-	return YES;
+	return error;
 }
 
 /**
  * When data is received from the serial port
  */
-- (void)serialPortReadData:(NSDictionary *)dataDictionary {
-	NSLog(@"%@", dataDictionary);
-	
-	NSData *data = [dataDictionary objectForKey:@"data"];
-	AMSerialPort *sendPort = [dataDictionary objectForKey:@"serialPort"];
-	NSLog(@"%i", [data length]);
+- (void)serialPortReadData:(NSData *)data {
 	
 	// Process returned cmd
 	if ([data length] > 0) {
 		NSString *cmd = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-		NSLog(@"CMD: %@", cmd);
 		
 		// Robot ready, play message
 		if( [cmd isEqualToString:@"R\n"] ){
 			[self playMessage];
 		}
+		else if( [cmd isEqualToString:@"B\n"] ){
+			ganzbotOn = YES;
+		}
 		else{
-			NSLog(@"%@", cmd);
+			NSLog(@">> %@", cmd);
 		}
 			
 		[cmd release];
 	}
 	
-	[sendPort readDataInBackground];
 }
 	   
 - (void)dealloc {
