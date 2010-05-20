@@ -35,7 +35,7 @@
 /**
  * Add a message to the queue
  */
-- (void)add:(NSString *)message voice:(NSString *)useVoice rate:(NSNumber *)useRate{
+- (void)add: (NSString *)message voice:(NSString *)useVoice rate:(NSNumber *)useRate{
 	NSManagedObject *messageEntity = nil; 
 	
 	messageEntity = [NSEntityDescription insertNewObjectForEntityForName: @"Message" inManagedObjectContext: [self managedObjectContext]]; 
@@ -99,6 +99,18 @@
 	[fetch release]; 
 	
 	return results;
+}
+
+/**
+ * Remove messages from queue
+ */
+- (void) emptyQueue: (BOOL)wasSpoken {
+	NSArray *results = [self getMessageQueue:wasSpoken]; 
+	int count = [results count];
+	for (int i = 0; i < count; i++) {
+		[[self managedObjectContext] deleteObject:[results objectAtIndex:i]];
+	}
+	[self save];
 }
 
 

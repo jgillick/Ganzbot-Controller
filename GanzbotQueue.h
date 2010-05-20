@@ -22,6 +22,7 @@
 
 - (NSArray *) getMessageQueue: (BOOL)wasSpoken;
 - (NSArray *) getMessageQueue: (BOOL)wasSpoken limit:(NSUInteger)useLimit;
+- (void) emptyQueue: (BOOL)wasSpoken;
 - (void)add: (NSString *)message voice:(NSString *)useVoice rate:(NSNumber *)useRate;
 
 - (NSManagedObject *)getNextInQueue;

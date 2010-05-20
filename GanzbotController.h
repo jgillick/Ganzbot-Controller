@@ -41,6 +41,8 @@
 - (IBAction)sayMessage:(id)sender;
 - (IBAction)savePrefs: (id)sender;
 - (IBAction)toggleServer: (id)sender;
+- (IBAction)emptyQueue: (id)sender;
+- (IBAction)emptyHistory: (id)sender;
 
 - (void)updateSerialList;
 

@@ -6,6 +6,21 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1CCEF36611A5B40B0061EF5D /* Ganzbot.dmg */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1CCEF36D11A5B4160061EF5D /* Build configuration list for PBXAggregateTarget "Ganzbot.dmg" */;
+			buildPhases = (
+				1CCEF36511A5B40B0061EF5D /* ShellScript */,
+			);
+			dependencies = (
+				1CCEF36A11A5B4100061EF5D /* PBXTargetDependency */,
+			);
+			name = Ganzbot.dmg;
+			productName = Ganzbot.dmg;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1C120FC01100FD5900AFEA11 /* Ganzbot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */; };
 		1C120FE111011FCC00AFEA11 /* GanzbotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C120FE011011FCC00AFEA11 /* GanzbotController.m */; };
@@ -43,6 +58,16 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CCEF36911A5B4100061EF5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* Ganzbot */;
+			remoteInfo = Ganzbot;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1C1211DD1101590F00AFEA11 /* CopyFiles */ = {
@@ -398,6 +423,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Ganzbot */,
+				1CCEF36611A5B40B0061EF5D /* Ganzbot.dmg */,
 			);
 		};
 /* End PBXProject section */
@@ -415,6 +441,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CCEF36511A5B40B0061EF5D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$BUILT_PRODUCTS_DIR/Ganzbot.app,
+			);
+			outputPaths = (
+				$BUILT_PRODUCTS_DIR/Ganzbot.dmg,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -ex\n\n[ \"$ACTION\" = build ] || exit 0\n[ \"$BUILD_VARIANTS\" = \"normal\" ] || exit 0\n\ndir=\"$TEMP_FILES_DIR/disk\"\ndmg=\"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.dmg\"\n\nrm -rf \"$dir\"\nmkdir \"$dir\"\ncp -R \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app\" \"$dir\"\nrm -f \"$dmg\"\nhdiutil create -srcfolder \"$dir\" -volname \"$PROJECT_NAME\" \"$dmg\"\nhdiutil internet-enable -yes \"$dmg\"\nrm -rf \"$dir\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
@@ -453,6 +497,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1CCEF36A11A5B4100061EF5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* Ganzbot */;
+			targetProxy = 1CCEF36911A5B4100061EF5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -473,6 +525,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1CCEF36711A5B40B0061EF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Ganzbot.dmg;
+			};
+			name = Debug;
+		};
+		1CCEF36811A5B40B0061EF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Ganzbot.dmg;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -543,6 +616,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1CCEF36D11A5B4160061EF5D /* Build configuration list for PBXAggregateTarget "Ganzbot.dmg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCEF36711A5B40B0061EF5D /* Debug */,
+				1CCEF36811A5B40B0061EF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Ganzbot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

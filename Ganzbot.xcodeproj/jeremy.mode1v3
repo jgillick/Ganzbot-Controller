@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -313,8 +315,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -329,10 +329,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>Ganzbot.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>3F8D468F112DCCEB0081A060</string>
 										<key>history</key>
 										<array>
 											<string>3F8B501F110BE5F000E7588D</string>
@@ -375,14 +371,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1039, 431}}</string>
+								<string>{{0, 0}, {1039, 419}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 134 1280 644 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>431pt</string>
+							<string>419pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -395,14 +391,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 436}, {1039, 167}}</string>
+								<string>{{0, 424}, {1039, 179}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 134 1280 644 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>167pt</string>
+							<string>179pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -421,9 +417,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3F8D45B1112B89960081A060</string>
+				<string>3FBD084411386CC40050B71F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>3F8D45B2112B89960081A060</string>
+				<string>3FBD084511386CC40050B71F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -559,12 +555,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3F8D4690112DCCEB0081A060</string>
-		<string>3F8D45EA112CA9B80081A060</string>
-		<string>3F8D45EB112CA9B80081A060</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>3F6E8474110531C600575ABE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -584,14 +575,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SerialDevice.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -647,7 +636,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>3F6E8474110531C600575ABE</string>
-				<string>3F8D45B3112B89960081A060</string>
+				<string>3FBD084611386CC40050B71F</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

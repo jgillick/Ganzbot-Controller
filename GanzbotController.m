@@ -176,7 +176,12 @@
 	NSDictionary *voiceAttr = [voiceItem representedObject];
 	
 	// Add to queue
-	[ganzbot say:message withVoice:[voiceAttr objectForKey:@"VoiceIdentifier"] withRate:rate];
+	if([message isEqual: @""]){
+		[ganzbot speakNextInQueue];
+	}
+	else{
+		[ganzbot say:message withVoice:[voiceAttr objectForKey:@"VoiceIdentifier"] withRate:rate];
+	}
 	
 	// Empty field
 	[messageField setStringValue:@""];
@@ -208,6 +213,32 @@
 			NSLog(@"Could not start server. %@", error);
 		}
 	}
+}
+
+/*
+ * Empty queue
+ */
+- (IBAction)emptyQueue: (id)sender{
+	[queue emptyQueue:NO];
+}
+
+/*
+ * Empty history list
+ */
+- (IBAction)emptyHistory: (id)sender{
+	[queue emptyQueue:YES];	
+}
+
+/*
+ * When a user clicks on an item in the history, fill the message field with that history message
+ */
+- (void)tableViewSelectionDidChange: (NSNotification *)notification{
+	NSTableView *tableview = [notification object]; 
+	int rowIndex = [tableview selectedRow] + 1;
+	NSTableColumn *column = [[tableview tableColumns] objectAtIndex:1];
+	NSTextFieldCell *cell = [column dataCellForRow:rowIndex];
+	
+	[messageField setStringValue: [cell stringValue]];
 }
 
 /*
