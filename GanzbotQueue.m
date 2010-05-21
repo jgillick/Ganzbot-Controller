@@ -83,7 +83,8 @@
 	NSDictionary		*entities = [[self managedObjectModel] entitiesByName]; 
 	NSEntityDescription	*entity = [entities valueForKey:@"Message"];
 	NSPredicate			*predicate; 
-	NSSortDescriptor	*sort = [[NSSortDescriptor alloc] initWithKey:@"created_on" ascending:YES];
+	BOOL				isAscendingOrder = !wasSpoken;
+	NSSortDescriptor	*sort = [[NSSortDescriptor alloc] initWithKey:@"created_on" ascending:isAscendingOrder];
 	NSArray				*sortDescriptors = [NSArray arrayWithObject: sort];
 	NSFetchRequest		*fetch = [[NSFetchRequest alloc] init]; 
 	
