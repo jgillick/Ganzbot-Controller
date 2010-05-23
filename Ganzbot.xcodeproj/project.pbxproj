@@ -27,7 +27,6 @@
 		1C1211541101501900AFEA11 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C1211531101501900AFEA11 /* Defaults.plist */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		3F1E8BC611121AA600FF860A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1E8BC511121AA600FF860A /* IOKit.framework */; };
-		3F5085BE1110C51100EEE40C /* GanzbotQueueRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5085BD1110C51100EEE40C /* GanzbotQueueRemote.m */; };
 		3F58C44811058C0A00C7F053 /* GanzbotPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */; };
 		3F6E84631105305400575ABE /* AudioDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E84621105305400575ABE /* AudioDevices.m */; };
 		3F8B5292110D693400E7588D /* MGTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B5285110D693400E7588D /* MGTemplateEngine.m */; };
@@ -96,8 +95,6 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Ganzbot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ganzbot_Prefix.pch; sourceTree = "<group>"; };
 		3F1E8BC511121AA600FF860A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		3F5085BC1110C51100EEE40C /* GanzbotQueueRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GanzbotQueueRemote.h; sourceTree = "<group>"; };
-		3F5085BD1110C51100EEE40C /* GanzbotQueueRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanzbotQueueRemote.m; sourceTree = "<group>"; };
 		3F58C44611058C0A00C7F053 /* GanzbotPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GanzbotPrefs.h; sourceTree = "<group>"; };
 		3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanzbotPrefs.m; sourceTree = "<group>"; };
 		3F6E84611105305400575ABE /* AudioDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDevices.h; sourceTree = "<group>"; };
@@ -185,8 +182,6 @@
 				3FDA62271106ED9E003D4F8A /* GanzbotServer.m */,
 				3FDA64341107D7BB003D4F8A /* GanzbotQueue.h */,
 				3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */,
-				3F5085BC1110C51100EEE40C /* GanzbotQueueRemote.h */,
-				3F5085BD1110C51100EEE40C /* GanzbotQueueRemote.m */,
 				3F8D45BD112CA0530081A060 /* SerialDevice.h */,
 				3F8D45BE112CA0530081A060 /* SerialDevice.m */,
 			);
@@ -490,7 +485,6 @@
 				3F8B5296110D693400E7588D /* NSDictionary_DeepMutableCopy.m in Sources */,
 				3F8B5335110D746800E7588D /* ICUTemplateMatcher.m in Sources */,
 				3F8B5336110D746800E7588D /* RegexKitLite.m in Sources */,
-				3F5085BE1110C51100EEE40C /* GanzbotQueueRemote.m in Sources */,
 				3F8D45BF112CA0530081A060 /* SerialDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

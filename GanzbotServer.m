@@ -21,11 +21,6 @@ static Ganzbot *ganzbot;
 	ganzbot = useGanzbot;
 	status = 0;
 	httpServer = [[HTTPServer alloc] init];
-	
-	NSString *bonjourName = [NSString stringWithFormat:@"%@ (%@)", @"Ganzbot", [httpServer domain]];
-	[httpServer setDomain:@"local"];
-	[httpServer setName: bonjourName];
-	[httpServer setType:@"_http._tcp."];
 							 
 	// Handle POST & GET actions
 	[httpServer setConnectionClass:[self class]];
@@ -43,6 +38,7 @@ static Ganzbot *ganzbot;
 	// Template engine
 	tmplEngine = [MGTemplateEngine templateEngine];
 	[tmplEngine setDelegate:self];
+	[tmplEngine loadFilter:self];
 	[tmplEngine setMatcher:[ICUTemplateMatcher matcherWithTemplateEngine:tmplEngine]];
 	
 	return [super initWithAsyncSocket:newSocket forServer:myServer];
@@ -83,9 +79,12 @@ static Ganzbot *ganzbot;
  */
 - (NSObject<HTTPResponse> *)httpResponseForMethod:(NSString *)method URI:(NSString *)path {
 	
-	NSString *filePath = [super filePathForURI:path];
-	NSString *fileName = [filePath lastPathComponent];
-	NSString *ext = [filePath pathExtension];
+	BOOL isDirectory;
+	NSString *tmplPath = [super filePathForURI: [@"/templates/" stringByAppendingPathComponent: path]];
+	NSString *staticPath = [@"/static/" stringByAppendingPathComponent: path];
+	NSString *fileName = [tmplPath lastPathComponent];
+	NSString *ext = [tmplPath pathExtension];
+	
 	
 	// Form processing for '.awesome' paths and POST method
 	if([method isEqualToString:@"POST"] && [ext isEqualToString:@"awesome"]) {
@@ -105,15 +104,26 @@ static Ganzbot *ganzbot;
 		[self redirect:@"/"];
 		return NO;
 	}
-	
-	// Parse template if it's a '.html' file
-	else if( [ext isEqualToString:@"html"] ){
-		NSString *html = [self processTemplate:filePath];
+	// Templates
+	else if([[NSFileManager defaultManager] fileExistsAtPath:tmplPath isDirectory:&isDirectory]){
+		
+		// index.html
+		if(isDirectory){
+			tmplPath = [tmplPath stringByAppendingPathComponent:@"index.html"];
+		}
+		
+		NSString *html = [self processTemplate:tmplPath];
 		NSData *htmlData = [html dataUsingEncoding: NSUTF8StringEncoding];
 		return [[[HTTPDataResponse alloc] initWithData:htmlData] autorelease];
+	}	   
+	// Static files
+	else if( [[NSFileManager defaultManager] fileExistsAtPath: [super filePathForURI: staticPath]] ){
+		return [super httpResponseForMethod:method URI:staticPath];
 	}
+	// Not found
 	else{
-		return [super httpResponseForMethod:method URI:path];
+		NSLog(@"%@", tmplPath);
+		return [super httpResponseForMethod:method URI:@"/404.html"];
 	}
 }
 
@@ -219,6 +229,33 @@ static Ganzbot *ganzbot;
 	return value;
 }
 
+
+// ****************************************************************
+// 
+// Filters
+// 
+// ****************************************************************
+
+- (NSArray *)filters {
+	
+	return [NSArray arrayWithObjects:
+			@"escapeQuotes",
+			nil];
+}
+- (NSObject *)filterInvoked:(NSString *)filter withArguments:(NSArray *)args onValue:(NSObject *)value{
+	
+	if( [filter isEqualToString:@"escapeQuotes"] ){
+		NSString *valueStr = (NSString *)value;
+		NSLog(@"Value: %@", valueStr);
+		valueStr = [valueStr stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
+		valueStr = [valueStr stringByReplacingOccurrencesOfString:@"'" withString:@"\\'"];
+		
+		return valueStr;
+	}
+	
+	return value;
+}
+
 // ****************************************************************
 // 
 // Methods below are all optional MGTemplateEngineDelegate methods.
@@ -242,6 +279,7 @@ static Ganzbot *ganzbot;
 - (void)templateEngine:(MGTemplateEngine *)engine encounteredError:(NSError *)error isContinuing:(BOOL)continuing; {
 	NSLog(@"Template error: %@", error);
 }
+
 
 // ****************************************************************
 // 

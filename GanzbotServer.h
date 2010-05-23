@@ -13,7 +13,7 @@
 #import "HTTPConnection.h"
 #import "MGTemplateEngine.h"
 
-@interface GanzbotServer : HTTPConnection <MGTemplateEngineDelegate> {
+@interface GanzbotServer : HTTPConnection <MGTemplateEngineDelegate, MGTemplateFilter> {
 	HTTPServer *httpServer;
 	NSInteger status;
 	MGTemplateEngine *tmplEngine;

@@ -1,0 +1,16 @@
+{
+	queue:[
+			{% for message in queue %}
+				{% if currentLoop.currentIndex > 0 %},{% /if %}
+				{ text: "{{ message.text | escapeQuotes }}",
+				  time: "{{ message.created_on |  date_format: "MM/dd HH:mm" }}" }
+			{% /for %}
+		],
+	history: [
+			{% for message in history %}
+				{% if currentLoop.currentIndex > 0 %},{% /if %}
+				{ text: "{{ message.text | escapeQuotes }}",
+				  time: "{{ message.created_on |  date_format: "MM/dd HH:mm" }}" }
+			{% /for %}
+		]
+)
