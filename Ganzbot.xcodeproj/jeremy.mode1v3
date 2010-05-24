@@ -267,7 +267,6 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>3FDA62341106EFFC003D4F8A</string>
-								<string>3F481E1311A8D538008210AB</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1058C7A0FEA54F0111CA2CBB</string>
 								<string>1058C7A2FEA54F0111CA2CBB</string>
@@ -278,13 +277,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
-									<integer>2</integer>
+									<integer>28</integer>
+									<integer>20</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 10}, {219, 585}}</string>
+							<string>{{0, 0}, {219, 585}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -314,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GanzbotServer.m</string>
+								<string>Defaults.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,23 +326,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GanzbotServer.m</string>
+										<string>Defaults.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F481E9D11A8DFBD008210AB</string>
+										<string>3F481EB911A8E6BE008210AB</string>
 										<key>history</key>
 										<array>
 											<string>3F8B501F110BE5F000E7588D</string>
 											<string>3F8B503E110BE99A00E7588D</string>
-											<string>3F8B5186110C009600E7588D</string>
-											<string>3F8B537E110D79AC00E7588D</string>
 											<string>3F8B53B2110D7E3100E7588D</string>
 											<string>3F8B53C9110D814700E7588D</string>
 											<string>3F8B53D1110D829800E7588D</string>
 											<string>3F8B53D2110D829800E7588D</string>
 											<string>3F8B541C110D8C2700E7588D</string>
-											<string>3F8B5436110D8E8500E7588D</string>
 											<string>3F8B54C1110D9A4200E7588D</string>
 											<string>3F1E8BFD1112200100FF860A</string>
 											<string>3F1E8BFF1112200100FF860A</string>
@@ -369,7 +363,9 @@
 											<string>3F481E5E11A8DA8E008210AB</string>
 											<string>3F481E7011A8DB98008210AB</string>
 											<string>3F481E9711A8DFA0008210AB</string>
-											<string>3F481E9811A8DFA0008210AB</string>
+											<string>3F481EB611A8E6BE008210AB</string>
+											<string>3F481EB711A8E6BE008210AB</string>
+											<string>3F481EB811A8E6BE008210AB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -381,14 +377,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1039, 407}}</string>
+								<string>{{0, 0}, {1039, 400}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 134 1280 644 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>407pt</string>
+							<string>400pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -401,14 +397,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 412}, {1039, 191}}</string>
+								<string>{{0, 405}, {1039, 198}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 134 1280 644 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>191pt</string>
+							<string>198pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -427,9 +423,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3F481B6911A8C33A008210AB</string>
+				<string>3F481EBA11A8E6BE008210AB</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>3F481B6A11A8C33A008210AB</string>
+				<string>3F481EBB11A8E6BE008210AB</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -565,12 +561,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3F481E9E11A8DFBD008210AB</string>
-		<string>3F481BC411A8D2AD008210AB</string>
-		<string>3F481BC511A8D2AD008210AB</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>3F6E8474110531C600575ABE</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/jeremy/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Ganzbot.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -595,7 +586,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GanzbotServer.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -612,8 +603,6 @@
 							<string>221pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -653,7 +642,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>3F6E8474110531C600575ABE</string>
-				<string>3F481B6B11A8C33A008210AB</string>
+				<string>3F481EBC11A8E6BE008210AB</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

@@ -25,6 +25,7 @@
 		1C120FC01100FD5900AFEA11 /* Ganzbot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C120FBF1100FD5900AFEA11 /* Ganzbot.m */; };
 		1C120FE111011FCC00AFEA11 /* GanzbotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C120FE011011FCC00AFEA11 /* GanzbotController.m */; };
 		1C1211541101501900AFEA11 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C1211531101501900AFEA11 /* Defaults.plist */; };
+		1CC57FB511AAF12000E71026 /* ganzbot.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1CC57FB411AAF12000E71026 /* ganzbot.icns */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		3F1E8BC611121AA600FF860A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1E8BC511121AA600FF860A /* IOKit.framework */; };
 		3F58C44811058C0A00C7F053 /* GanzbotPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C44711058C0A00C7F053 /* GanzbotPrefs.m */; };
@@ -89,6 +90,7 @@
 		1C120FDF11011FCC00AFEA11 /* GanzbotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GanzbotController.h; sourceTree = "<group>"; };
 		1C120FE011011FCC00AFEA11 /* GanzbotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GanzbotController.m; sourceTree = "<group>"; };
 		1C1211531101501900AFEA11 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		1CC57FB411AAF12000E71026 /* ganzbot.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ganzbot.icns; sourceTree = "<group>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -242,6 +244,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1CC57FB411AAF12000E71026 /* ganzbot.icns */,
 				3FDA62341106EFFC003D4F8A /* Web */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -432,6 +435,7 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				1C1211541101501900AFEA11 /* Defaults.plist in Resources */,
 				3FDA62361106EFFC003D4F8A /* Web in Resources */,
+				1CC57FB511AAF12000E71026 /* ganzbot.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
