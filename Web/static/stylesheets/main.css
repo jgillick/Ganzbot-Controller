@@ -14,6 +14,12 @@ li em { font-size:.8em; color:#666; }
 label:after { content:':'; }
 label { float:left; width:4em; padding-right:7px; text-align:right; }
 
+/* History */
+.history { list-style-type: none; margin: 10px 0; padding: 0; }
+.history li { float: left; clear: left; padding: 3px 10px 3px 30px; min-height: 25px; }
+.history li:hover { background: #eee url(/images/sound.png) no-repeat 3px center; cursor: pointer; }
+
+/* Sound board */
 #soundboard ul { list-style-type: none; margin: 0; padding: 0; }
 #soundboard li { position: relative; width: 350px; padding: 10px 20px; margin: 0; float: left; cursor: move; }
 #soundboard li:hover { background: #efefef url(/images/grabby.png) center top no-repeat; }
