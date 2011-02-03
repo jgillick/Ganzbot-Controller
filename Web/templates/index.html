@@ -20,10 +20,10 @@
 	<em>( The queue is empty )</em>
 {% else %}
 	<p>Messages that have not been spoken yet:</p>
-	<ol>
+	<ol class="queue">
 	{% for message in queue %}
 		<li>
-			"{{ message.text }}"
+			"<span>{{ message.text }}</span>"
 			<em>{{ message.created_on |  date_format: "MM/dd HH:mm" }}</em>
 		</li>
 	{% /for %}
@@ -36,7 +36,7 @@
 </p>
 <form action="/add.awesome" method="post">
   <p class="message">
-  	<input type="text" size="60" name="text" id="message-field" />
+  	<input type="text" size="60" name="text" class="message-field" />
   </p>
   <p>
     <button type="submit">Speak</button>

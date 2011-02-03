@@ -159,17 +159,6 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
-	1C1211651101518B00AFEA11 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/jgillick/Documents/Ganzbot Controller/Info.plist";
-		rLen = 0;
-		rLoc = 2147483647;
-	};
 	1C4619291112933A00C968D1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1C46192A1112933A00C968D1 /* NSPopUpButton.h */;
@@ -456,66 +445,6 @@
 		vrLen = 237;
 		vrLoc = 0;
 	};
-	1C4A68A711A708B200A6F293 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
-		name = "GanzbotQueue.m: 113";
-		rLen = 0;
-		rLoc = 2777;
-		rType = 0;
-		vrLen = 2013;
-		vrLoc = 1543;
-	};
-	1C4A68A811A708B200A6F293 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1C120FE011011FCC00AFEA11 /* GanzbotController.m */;
-		name = "GanzbotController.m: 96";
-		rLen = 0;
-		rLoc = 2655;
-		rType = 0;
-		vrLen = 1565;
-		vrLoc = 1789;
-	};
-	1C4A68A911A708B200A6F293 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
-		name = "GanzbotQueue.m: 113";
-		rLen = 0;
-		rLoc = 2777;
-		rType = 0;
-		vrLen = 2013;
-		vrLoc = 1543;
-	};
-	1C4A68AA11A708B200A6F293 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64341107D7BB003D4F8A /* GanzbotQueue.h */;
-		name = "GanzbotQueue.h: 24";
-		rLen = 15;
-		rLoc = 702;
-		rType = 0;
-		vrLen = 981;
-		vrLoc = 0;
-	};
-	1C4A68AB11A708B200A6F293 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA62271106ED9E003D4F8A /* GanzbotServer.m */;
-		name = "GanzbotServer.m: 144";
-		rLen = 3;
-		rLoc = 3755;
-		rType = 0;
-		vrLen = 1610;
-		vrLoc = 3486;
-	};
-	1C4A68AC11A708B200A6F293 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1C120FE011011FCC00AFEA11 /* GanzbotController.m */;
-		name = "GanzbotController.m: 96";
-		rLen = 0;
-		rLoc = 2655;
-		rType = 0;
-		vrLen = 1565;
-		vrLoc = 1789;
-	};
 	1C4A68AD11A708B200A6F293 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		name = "GanzbotQueueRemote.h: 1";
@@ -524,16 +453,6 @@
 		rType = 0;
 		vrLen = 237;
 		vrLoc = 0;
-	};
-	1C4A68AE11A708B200A6F293 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
-		name = "GanzbotQueue.m: 96";
-		rLen = 0;
-		rLoc = 2342;
-		rType = 0;
-		vrLen = 1788;
-		vrLoc = 1223;
 	};
 	1C75F17B112F2D8A00E6339D /* PlistBookmark */ = {
 		isa = PlistBookmark;
@@ -609,6 +528,36 @@
 		rType = 0;
 		vrLen = 1350;
 		vrLoc = 5407;
+	};
+	1C8951BB12FA3A1C00802268 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
+		name = "GanzbotQueue.m: 96";
+		rLen = 0;
+		rLoc = 2342;
+		rType = 0;
+		vrLen = 1929;
+		vrLoc = 1486;
+	};
+	1C8951BC12FA3A1C00802268 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
+		name = "GanzbotQueue.m: 96";
+		rLen = 0;
+		rLoc = 2342;
+		rType = 0;
+		vrLen = 1929;
+		vrLoc = 1486;
+	};
+	1C8951BD12FA3A1C00802268 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FDA62271106ED9E003D4F8A /* GanzbotServer.m */;
+		name = "GanzbotServer.m: 95";
+		rLen = 0;
+		rLoc = 2277;
+		rType = 0;
+		vrLen = 1738;
+		vrLoc = 1511;
 	};
 	1C89A8BD110E1696009317AA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -764,16 +713,6 @@
 		vrLen = 943;
 		vrLoc = 0;
 	};
-	1CC57FAE11AAF0B400E71026 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
-		name = "GanzbotQueue.m: 96";
-		rLen = 0;
-		rLoc = 2342;
-		rType = 0;
-		vrLen = 1787;
-		vrLoc = 1224;
-	};
 	1CC57FBA11AAF55600E71026 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
@@ -784,47 +723,6 @@
 		name = "/Users/jgillick/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Info.plist";
 		rLen = 0;
 		rLoc = 2147483647;
-	};
-	1CC57FBB11AAF55600E71026 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
-		name = "GanzbotQueue.m: 96";
-		rLen = 0;
-		rLoc = 2342;
-		rType = 0;
-		vrLen = 1787;
-		vrLoc = 1224;
-	};
-	1CC57FBC11AAF55600E71026 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
-		name = "GanzbotQueue.m: 96";
-		rLen = 0;
-		rLoc = 2342;
-		rType = 0;
-		vrLen = 1787;
-		vrLoc = 1224;
-	};
-	1CC57FBD11AAF55600E71026 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/jgillick/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Info.plist";
-		rLen = 0;
-		rLoc = 2147483647;
-	};
-	1CC57FBE11AAF55600E71026 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
-		name = "GanzbotQueue.m: 96";
-		rLen = 0;
-		rLoc = 2342;
-		rType = 0;
-		vrLen = 1977;
-		vrLoc = 1438;
 	};
 	1CCEF36611A5B40B0061EF5D /* Ganzbot.dmg */ = {
 		activeExec = 0;
@@ -848,23 +746,6 @@
 		vrLen = 233;
 		vrLoc = 0;
 	};
-	1CCEF38311A5B5F80061EF5D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1CCEF38411A5B5F80061EF5D /* index.html */;
-		name = "index.html: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1733;
-		vrLoc = 179;
-	};
-	1CCEF38411A5B5F80061EF5D /* index.html */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.html;
-		name = index.html;
-		path = "/Users/jgillick/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Web/index.html";
-		sourceTree = "<absolute>";
-	};
 	1CCEF38C11A5B5F80061EF5D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */;
@@ -883,23 +764,6 @@
 		rType = 0;
 		vrLen = 237;
 		vrLoc = 0;
-	};
-	1CCEF39711A5B5F80061EF5D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1CCEF39811A5B5F80061EF5D /* index.html */;
-		name = "index.html: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1733;
-		vrLoc = 179;
-	};
-	1CCEF39811A5B5F80061EF5D /* index.html */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.html;
-		name = index.html;
-		path = "/Users/jgillick/Dropbox/Projects/Ganzbot/Cocao/Ganzbot Controller/Web/index.html";
-		sourceTree = "<absolute>";
 	};
 	1CCEF40511A5D6F80061EF5D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -993,8 +857,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 296415410;
-			PBXWorkspaceStateSaveDate = 296415410;
+			PBXPerProjectTemplateStateSaveDate = 318463732;
+			PBXWorkspaceStateSaveDate = 318463732;
 		};
 		perUserProjectItems = {
 			1C120FFB11012A6B00AFEA11 = 1C120FFB11012A6B00AFEA11 /* PBXTextBookmark */;
@@ -1005,7 +869,6 @@
 			1C1211561101508600AFEA11 = 1C1211561101508600AFEA11 /* PBXTextBookmark */;
 			1C12115B1101508600AFEA11 = 1C12115B1101508600AFEA11 /* PlistBookmark */;
 			1C12115E1101508600AFEA11 = 1C12115E1101508600AFEA11 /* PlistBookmark */;
-			1C1211651101518B00AFEA11 = 1C1211651101518B00AFEA11 /* PlistBookmark */;
 			1C4619291112933A00C968D1 = 1C4619291112933A00C968D1 /* PBXTextBookmark */;
 			1C46192C1112933A00C968D1 = 1C46192C1112933A00C968D1 /* PBXTextBookmark */;
 			1C46192D1112933A00C968D1 = 1C46192D1112933A00C968D1 /* PBXTextBookmark */;
@@ -1032,20 +895,16 @@
 			1C4A68A411A708B200A6F293 = 1C4A68A411A708B200A6F293 /* PBXTextBookmark */;
 			1C4A68A511A708B200A6F293 = 1C4A68A511A708B200A6F293 /* PBXTextBookmark */;
 			1C4A68A611A708B200A6F293 = 1C4A68A611A708B200A6F293 /* PBXTextBookmark */;
-			1C4A68A711A708B200A6F293 = 1C4A68A711A708B200A6F293 /* PBXTextBookmark */;
-			1C4A68A811A708B200A6F293 = 1C4A68A811A708B200A6F293 /* PBXTextBookmark */;
-			1C4A68A911A708B200A6F293 = 1C4A68A911A708B200A6F293 /* PBXTextBookmark */;
-			1C4A68AA11A708B200A6F293 = 1C4A68AA11A708B200A6F293 /* PBXTextBookmark */;
-			1C4A68AB11A708B200A6F293 = 1C4A68AB11A708B200A6F293 /* PBXTextBookmark */;
-			1C4A68AC11A708B200A6F293 = 1C4A68AC11A708B200A6F293 /* PBXTextBookmark */;
 			1C4A68AD11A708B200A6F293 = 1C4A68AD11A708B200A6F293 /* PBXTextBookmark */;
-			1C4A68AE11A708B200A6F293 = 1C4A68AE11A708B200A6F293 /* PBXTextBookmark */;
 			1C75F17B112F2D8A00E6339D = 1C75F17B112F2D8A00E6339D /* PlistBookmark */;
 			1C75F188112F2D8A00E6339D = 1C75F188112F2D8A00E6339D /* PBXTextBookmark */;
 			1C75F18A112F2D8A00E6339D = 1C75F18A112F2D8A00E6339D /* PBXTextBookmark */;
 			1C75F264112F362800E6339D = 1C75F264112F362800E6339D /* PBXTextBookmark */;
 			1C75F268112F362800E6339D = 1C75F268112F362800E6339D /* PBXTextBookmark */;
 			1C75F34F112F432000E6339D = 1C75F34F112F432000E6339D /* PBXTextBookmark */;
+			1C8951BB12FA3A1C00802268 = 1C8951BB12FA3A1C00802268 /* PBXTextBookmark */;
+			1C8951BC12FA3A1C00802268 = 1C8951BC12FA3A1C00802268 /* PBXTextBookmark */;
+			1C8951BD12FA3A1C00802268 = 1C8951BD12FA3A1C00802268 /* PBXTextBookmark */;
 			1C89A8BD110E1696009317AA = 1C89A8BD110E1696009317AA /* PBXTextBookmark */;
 			1C89A8C4110E1696009317AA = 1C89A8C4110E1696009317AA /* PBXTextBookmark */;
 			1C89A8CE110E1696009317AA = 1C89A8CE110E1696009317AA /* PBXTextBookmark */;
@@ -1060,18 +919,11 @@
 			1C89A8FD110E1DBA009317AA = 1C89A8FD110E1DBA009317AA /* PBXTextBookmark */;
 			1C89A902110E1DBA009317AA = 1C89A902110E1DBA009317AA /* PBXTextBookmark */;
 			1C89A903110E1DBA009317AA = 1C89A903110E1DBA009317AA /* PBXTextBookmark */;
-			1CC57FAE11AAF0B400E71026 /* PBXTextBookmark */ = 1CC57FAE11AAF0B400E71026 /* PBXTextBookmark */;
-			1CC57FBA11AAF55600E71026 /* PlistBookmark */ = 1CC57FBA11AAF55600E71026 /* PlistBookmark */;
-			1CC57FBB11AAF55600E71026 /* PBXTextBookmark */ = 1CC57FBB11AAF55600E71026 /* PBXTextBookmark */;
-			1CC57FBC11AAF55600E71026 /* PBXTextBookmark */ = 1CC57FBC11AAF55600E71026 /* PBXTextBookmark */;
-			1CC57FBD11AAF55600E71026 /* PlistBookmark */ = 1CC57FBD11AAF55600E71026 /* PlistBookmark */;
-			1CC57FBE11AAF55600E71026 /* PBXTextBookmark */ = 1CC57FBE11AAF55600E71026 /* PBXTextBookmark */;
+			1CC57FBA11AAF55600E71026 = 1CC57FBA11AAF55600E71026 /* PlistBookmark */;
 			1CCEF38011A5B5F80061EF5D = 1CCEF38011A5B5F80061EF5D /* PBXTextBookmark */;
 			1CCEF38111A5B5F80061EF5D = 1CCEF38111A5B5F80061EF5D /* PBXTextBookmark */;
-			1CCEF38311A5B5F80061EF5D = 1CCEF38311A5B5F80061EF5D /* PBXTextBookmark */;
 			1CCEF38C11A5B5F80061EF5D = 1CCEF38C11A5B5F80061EF5D /* PBXTextBookmark */;
 			1CCEF39011A5B5F80061EF5D = 1CCEF39011A5B5F80061EF5D /* PBXTextBookmark */;
-			1CCEF39711A5B5F80061EF5D = 1CCEF39711A5B5F80061EF5D /* PBXTextBookmark */;
 			1CCEF40511A5D6F80061EF5D = 1CCEF40511A5D6F80061EF5D /* PBXTextBookmark */;
 			1CCEF40611A5D6F80061EF5D = 1CCEF40611A5D6F80061EF5D /* PBXTextBookmark */;
 		};
@@ -1165,9 +1017,9 @@
 	};
 	3FDA62271106ED9E003D4F8A /* GanzbotServer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1605, 4214}}";
-			sepNavSelRange = "{3755, 3}";
-			sepNavVisRange = "{3486, 1610}";
+			sepNavIntBoundsRect = "{{0, 0}, {1605, 4690}}";
+			sepNavSelRange = "{2277, 0}";
+			sepNavVisRange = "{1511, 1738}";
 			sepNavWindowFrame = "{{15, 615}, {750, 558}}";
 		};
 	};
@@ -1338,9 +1190,9 @@
 	};
 	3FDA64351107D7BB003D4F8A /* GanzbotQueue.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1605, 3360}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1605, 3528}}";
 			sepNavSelRange = "{2342, 0}";
-			sepNavVisRange = "{1438, 1977}";
+			sepNavVisRange = "{1486, 1929}";
 		};
 	};
 	8D1107260486CEB800E47090 /* Ganzbot */ = {

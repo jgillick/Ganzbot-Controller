@@ -13,4 +13,4 @@
 				  time: "{{ message.created_on |  date_format: "MM/dd HH:mm" }}" }
 			{% /for %}
 		]
-)
+}

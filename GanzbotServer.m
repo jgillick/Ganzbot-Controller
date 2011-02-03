@@ -91,7 +91,7 @@ static Ganzbot *ganzbot;
 		NSDictionary *data = [self readPostData];
 		
 		// Add the message to the queue
-		if([fileName isEqualToString:@"add.awesome"]){
+		if([fileName isEqualToString:@"add.awesome"] && [data objectForKey:@"text"] != nil){
 			float rate = [[data objectForKey:@"rate"] floatValue];
 
 			[ganzbot say:[data objectForKey:@"text"] 
@@ -101,7 +101,12 @@ static Ganzbot *ganzbot;
 		}
 		
 		// Redirect to '/'
-		[self redirect:@"/"];
+		if([[data objectForKey:@"responseType"] isEqualToString:@"json"]){
+			[self redirect:@"/api.json"];
+		}
+		else{
+			[self redirect:@"/"];
+		}
 		return NO;
 	}
 	// Templates

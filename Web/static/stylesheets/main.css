@@ -14,10 +14,14 @@ li em { font-size:.8em; color:#666; }
 label:after { content:':'; }
 label { float:left; width:4em; padding-right:7px; text-align:right; }
 
+input[type=text]{ padding: 3px; }
+input[type=text].progress { padding-left: 17px; color: #999; background: url(/images/anim_loading_16x16.gif) no-repeat left center; }
+
 /* History */
-.history { list-style-type: none; margin: 10px 0; padding: 0; }
-.history li { float: left; clear: left; padding: 3px 10px 3px 30px; min-height: 25px; }
+.history { width: 500px; list-style-type: none; margin: 10px 0; padding: 0; }
+.history li { padding: 3px 10px 3px 30px; min-height: 25px; }
 .history li:hover { background: #eee url(/images/sound.png) no-repeat 3px center; cursor: pointer; }
+.history li.progress { background: #eee url(/images/anim_loading_16x16.gif) no-repeat 3px center; }
 
 /* Sound board */
 #soundboard ul { list-style-type: none; margin: 0; padding: 0; }
